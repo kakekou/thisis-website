@@ -1127,7 +1127,7 @@
       background: var(--off-white);
       padding: 80px 0 0;
       color: var(--text-dark);
-      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      border-top: 1px solid #e0d6c8;
     }
 
     .footer-inner {
@@ -1135,7 +1135,7 @@
       grid-template-columns: 2fr 1fr 1fr;
       gap: 60px;
       padding-bottom: 60px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      border-bottom: 1px solid #e0d6c8;
     }
 
     .footer-logo {
@@ -1166,20 +1166,20 @@
       font-size: 0.75rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--gold-dark);
       margin-bottom: 20px;
     }
 
     .footer-links a {
       display: block;
       font-size: 0.8rem;
-      color: #555555;
+      color: var(--text-dark);
       padding: 6px 0;
       transition: color var(--transition);
     }
 
     .footer-links a:hover {
-      color: var(--gold-dark);
+      color: var(--gold);
     }
 
     .footer-social {
@@ -1191,18 +1191,18 @@
     .footer-social a {
       width: 40px;
       height: 40px;
-      border: 1px solid rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(26, 26, 26, 0.15);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #555555;
+      color: var(--text-dark);
       transition: all var(--transition);
     }
 
     .footer-social a:hover {
       border-color: var(--gold);
-      color: var(--gold-dark);
+      color: var(--gold);
       background: rgba(200, 169, 110, 0.08);
     }
 
@@ -1231,12 +1231,13 @@
     .footer-bottom {
       padding: 24px 0;
       text-align: center;
+      background: #f0ece4;
     }
 
     .footer-bottom p {
       font-family: var(--font-heading-en);
       font-size: 0.7rem;
-      color: #999999;
+      color: #888888;
       letter-spacing: 0.1em;
     }
 
@@ -1278,17 +1279,15 @@
 
     .parallax-bg {
       position: absolute;
-      inset: -20%;
-      background:
-        linear-gradient(135deg, rgba(10, 22, 40, 0.95), rgba(19, 32, 56, 0.9)),
-        linear-gradient(45deg, var(--navy) 25%, var(--navy-light) 25%, var(--navy-light) 50%, var(--navy) 50%, var(--navy) 75%, var(--navy-light) 75%);
-      background-size: 100%, 60px 60px;
+      inset: 0;
+      background: var(--navy);
       z-index: 0;
     }
 
     .parallax-content {
       position: relative;
       z-index: 1;
+      opacity: 1 !important;
     }
 
     .parallax-quote {
@@ -1298,11 +1297,12 @@
       font-weight: 600;
       line-height: 2;
       letter-spacing: 0.1em;
-      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.2);
     }
 
     .parallax-quote span {
       color: var(--gold-light);
+      text-shadow: 0 0 20px rgba(200, 169, 110, 0.3);
     }
 
     /* ========================================
@@ -1614,9 +1614,9 @@
   <!-- ========================================
        Parallax Quote
        ======================================== -->
-  <div class="parallax-section" data-parallax>
+  <div class="parallax-section">
     <div class="parallax-bg"></div>
-    <div class="parallax-content reveal">
+    <div class="parallax-content">
       <p class="parallax-quote">
         清掃によって<span>清爽</span>とした気持ちへ。<br>
         あなたの空間を、<span>もっと美しく</span>。
