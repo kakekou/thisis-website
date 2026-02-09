@@ -183,18 +183,13 @@
     }
 
     .nav-logo {
-      font-family: var(--font-heading-en);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: 0.05em;
       display: flex;
       align-items: center;
-      gap: 8px;
     }
 
-    .nav-logo span {
-      color: var(--gold);
+    .nav-logo img {
+      height: 40px;
+      width: auto;
     }
 
     .nav-links {
@@ -395,7 +390,7 @@
     .hero-desc {
       font-family: var(--font-heading-en);
       font-size: clamp(0.75rem, 1.2vw, 0.875rem);
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.8);
       letter-spacing: 0.25em;
       text-transform: uppercase;
       opacity: 0;
@@ -424,7 +419,7 @@
     .scroll-indicator span {
       font-family: var(--font-heading-en);
       font-size: 0.65rem;
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.6);
       letter-spacing: 0.2em;
       text-transform: uppercase;
     }
@@ -636,7 +631,7 @@
     .service-card p {
       font-size: 0.875rem;
       line-height: 2;
-      color: rgba(255, 255, 255, 0.65);
+      color: rgba(255, 255, 255, 0.85);
     }
 
     /* Pricing */
@@ -664,7 +659,7 @@
 
     .pricing-desc {
       font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.75);
       margin-bottom: 32px;
     }
 
@@ -726,14 +721,14 @@
 
     .pricing-card .price-tax {
       font-size: 0.75rem;
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.7);
       margin-bottom: 20px;
     }
 
     .pricing-card .price-desc {
       font-size: 0.8rem;
       line-height: 1.8;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.85);
     }
 
     /* Onepoint Menu Table */
@@ -757,7 +752,7 @@
     .onepoint-table tbody td {
       padding: 18px 20px;
       font-size: 0.875rem;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.9);
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       vertical-align: top;
     }
@@ -784,7 +779,7 @@
 
     .onepoint-table .menu-note {
       font-size: 0.78rem;
-      color: rgba(255, 255, 255, 0.45);
+      color: rgba(255, 255, 255, 0.7);
       margin-top: 4px;
     }
 
@@ -865,7 +860,7 @@
       display: block;
       font-size: 0.8rem;
       font-weight: 500;
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.9);
       margin-bottom: 8px;
       letter-spacing: 0.05em;
     }
@@ -894,7 +889,7 @@
 
     .form-input::placeholder,
     .form-textarea::placeholder {
-      color: rgba(255, 255, 255, 0.25);
+      color: rgba(255, 255, 255, 0.4);
     }
 
     .form-input:focus,
@@ -1071,17 +1066,17 @@
     }
 
     .footer-logo {
-      font-family: var(--font-heading-en);
-      font-size: 1.5rem;
-      font-weight: 700;
       margin-bottom: 20px;
     }
 
-    .footer-logo span { color: var(--gold); }
+    .footer-logo img {
+      height: 60px;
+      width: auto;
+    }
 
     .footer-info p {
       font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.75);
       line-height: 2;
     }
 
@@ -1105,7 +1100,7 @@
     .footer-links a {
       display: block;
       font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.75);
       padding: 6px 0;
       transition: color var(--transition);
     }
@@ -1123,12 +1118,12 @@
     .footer-social a {
       width: 40px;
       height: 40px;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.75);
       transition: all var(--transition);
     }
 
@@ -1168,7 +1163,7 @@
     .footer-bottom p {
       font-family: var(--font-heading-en);
       font-size: 0.7rem;
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.55);
       letter-spacing: 0.1em;
     }
 
@@ -1226,14 +1221,15 @@
     .parallax-quote {
       font-family: var(--font-heading-jp);
       font-size: clamp(1.3rem, 3vw, 1.8rem);
-      color: var(--white);
-      font-weight: 500;
+      color: #ffffff;
+      font-weight: 600;
       line-height: 2;
       letter-spacing: 0.1em;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
 
     .parallax-quote span {
-      color: var(--gold);
+      color: var(--gold-light);
     }
 
     /* ========================================
@@ -1337,7 +1333,7 @@
        ======================================== -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">This<span>Is</span></a>
+      <a href="#home" class="nav-logo"><img src="images/会社ロゴ横長.png" alt="ThisIs株式会社"></a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#concept">Concept</a></li>
@@ -1699,7 +1695,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-info">
-          <div class="footer-logo">This<span>Is</span></div>
+          <div class="footer-logo"><img src="images/会社ロゴ.png" alt="ThisIs株式会社"></div>
           <p>
             〒150-0042<br>
             東京都渋谷区宇田川町12-3<br>
