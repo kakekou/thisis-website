@@ -630,10 +630,6 @@
 
     /* Pricing */
     .pricing-section {
-      margin-top: 40px;
-    }
-
-    .pricing-section {
       background: #f2f0ed;
       border-radius: 8px;
       padding: 48px 40px;
@@ -674,12 +670,13 @@
     .pricing-card {
       background: var(--white);
       border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 4px;
-      padding: 40px 36px;
+      border-radius: 6px;
+      padding: 0;
       text-align: center;
       transition: all var(--transition);
       position: relative;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
     }
 
     .pricing-card:hover {
@@ -689,27 +686,40 @@
 
     .pricing-card.featured {
       border-color: var(--gold);
-      background: linear-gradient(135deg, rgba(200, 169, 110, 0.06) 0%, var(--white) 100%);
+    }
+
+    .pricing-card-header {
+      background: var(--gold);
+      padding: 20px 24px;
+    }
+
+    .pricing-card.featured .pricing-card-header {
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
     }
 
     .pricing-card-badge {
       display: inline-block;
-      font-size: 0.7rem;
+      font-family: var(--font-heading-en);
+      font-size: 0.65rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--gold-dark);
-      border: 1px solid rgba(200, 169, 110, 0.4);
-      padding: 4px 16px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.2);
+      padding: 3px 14px;
       border-radius: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
 
     .pricing-card h4 {
       font-family: var(--font-heading-jp);
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 600;
-      color: var(--text-dark);
-      margin-bottom: 12px;
+      color: var(--white);
+      margin-bottom: 0;
+    }
+
+    .pricing-card-body {
+      padding: 32px 36px 36px;
     }
 
     .pricing-card .price {
@@ -717,7 +727,7 @@
       font-size: 2.2rem;
       font-weight: 700;
       color: var(--gold-dark);
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
     .pricing-card .price-tax {
@@ -735,8 +745,14 @@
     /* Onepoint Menu Table */
     .onepoint-table {
       width: 100%;
-      border-collapse: collapse;
+      border-collapse: separate;
+      border-spacing: 0;
       margin-top: 24px;
+      background: var(--white);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.06);
     }
 
     .onepoint-table thead th {
@@ -744,18 +760,23 @@
       font-size: 0.75rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--gold-dark);
-      padding: 12px 20px;
+      color: var(--white);
+      background: var(--gold);
+      padding: 14px 24px;
       text-align: left;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: 600;
     }
 
     .onepoint-table tbody td {
-      padding: 18px 20px;
+      padding: 20px 24px;
       font-size: 0.875rem;
       color: #555555;
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
       vertical-align: top;
+    }
+
+    .onepoint-table tbody tr:last-child td {
+      border-bottom: none;
     }
 
     .onepoint-table tbody tr {
@@ -774,6 +795,7 @@
 
     .onepoint-table .menu-price {
       font-family: var(--font-heading-en);
+      font-weight: 600;
       color: var(--gold-dark);
       white-space: nowrap;
     }
@@ -1127,6 +1149,7 @@
     .footer-bottom {
       padding: 24px 0;
       text-align: center;
+      background: var(--navy);
     }
 
     .footer-bottom p {
@@ -1233,29 +1256,43 @@
         gap: 40px;
       }
 
+      .onepoint-table {
+        background: none;
+        border: none;
+        box-shadow: none;
+      }
+
       .onepoint-table thead { display: none; }
 
       .onepoint-table,
-      .onepoint-table tbody,
-      .onepoint-table tr,
-      .onepoint-table td {
+      .onepoint-table tbody {
         display: block;
         width: 100%;
       }
 
       .onepoint-table tr {
-        padding: 16px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        display: block;
+        background: var(--white);
+        border-radius: 6px;
+        padding: 20px 24px;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        border: 1px solid rgba(0, 0, 0, 0.06);
       }
 
       .onepoint-table td {
-        padding: 4px 0;
+        display: block;
+        padding: 2px 0;
         border: none;
       }
 
       .onepoint-table td:first-child {
         font-size: 0.95rem;
         margin-bottom: 4px;
+      }
+
+      .pricing-section {
+        padding: 32px 20px;
       }
 
       .toast {
@@ -1418,18 +1455,26 @@
         <p class="pricing-desc">お客様のニーズに合わせた2つのプランをご用意しています。</p>
         <div class="pricing-cards">
           <div class="pricing-card reveal-scale">
-            <div class="pricing-card-badge">Select 3</div>
-            <h4>水廻り3セレクトパック</h4>
-            <p class="price">¥38,000</p>
-            <p class="price-tax">税抜</p>
-            <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台から<br>3点選択制</p>
+            <div class="pricing-card-header">
+              <div class="pricing-card-badge">Select 3</div>
+              <h4>水廻り3セレクトパック</h4>
+            </div>
+            <div class="pricing-card-body">
+              <p class="price">¥38,000</p>
+              <p class="price-tax">税抜</p>
+              <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台から<br>3点選択制</p>
+            </div>
           </div>
           <div class="pricing-card featured reveal-scale">
-            <div class="pricing-card-badge">Recommended</div>
-            <h4>デラックスパック</h4>
-            <p class="price">¥55,000</p>
-            <p class="price-tax">税抜</p>
-            <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台の<br>まるごとパック</p>
+            <div class="pricing-card-header">
+              <div class="pricing-card-badge">Recommended</div>
+              <h4>デラックスパック</h4>
+            </div>
+            <div class="pricing-card-body">
+              <p class="price">¥55,000</p>
+              <p class="price-tax">税抜</p>
+              <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台の<br>まるごとパック</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1656,6 +1701,13 @@
       </div>
     </div>
   </section>
+
+  <!-- Wave Divider to Footer -->
+  <div class="wave-divider wave-divider-top">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px;">
+      <path d="M0,60 C300,120 600,0 900,80 C1050,100 1150,40 1200,60 L1200,120 L0,120 Z" fill="#0a1628"/>
+    </svg>
+  </div>
 
   <!-- ========================================
        Footer
