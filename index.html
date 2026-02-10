@@ -540,6 +540,11 @@
       margin-top: -2px;
     }
 
+    .wave-divider-hero {
+      margin-top: -2px;
+      background: var(--navy);
+    }
+
     /* ========================================
        Concept Section
        ======================================== */
@@ -547,8 +552,34 @@
       padding: 60px 0 100px;
       background: linear-gradient(180deg, var(--off-white) 0%, #f3f0eb 100%);
       position: relative;
+      overflow: hidden;
     }
 
+    /* Watermark */
+    .concept::before {
+      content: 'PHILOSOPHY';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-heading-en);
+      font-size: clamp(5rem, 14vw, 10rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.04;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .concept > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* REFRESH YOUR SPACE intro */
     .concept-intro {
       text-align: center;
       margin-bottom: 48px;
@@ -559,10 +590,13 @@
       font-size: clamp(0.7rem, 1.2vw, 0.8rem);
       letter-spacing: 0.4em;
       text-transform: uppercase;
-      color: var(--gold);
+      background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       display: inline-block;
       position: relative;
-      padding: 0 24px;
+      padding: 0 28px;
     }
 
     .concept-intro-label::before,
@@ -570,27 +604,50 @@
       content: '';
       position: absolute;
       top: 50%;
-      width: 32px;
+      width: 0;
       height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold));
+      transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
     }
 
     .concept-intro-label::before {
       right: 100%;
       background: linear-gradient(90deg, transparent, var(--gold));
+      transform-origin: right;
     }
 
     .concept-intro-label::after {
       left: 100%;
       background: linear-gradient(90deg, var(--gold), transparent);
+      transform-origin: left;
     }
 
+    .reveal.visible .concept-intro-label::before,
+    .reveal.visible .concept-intro-label::after {
+      width: 48px;
+    }
+
+    .concept-intro-dots {
+      display: block;
+      margin-top: 12px;
+      font-size: 0.5rem;
+      letter-spacing: 0.6em;
+      color: var(--gold);
+      opacity: 0.5;
+    }
+
+    /* Concept body */
     .concept-inner {
       display: grid;
       grid-template-columns: 1fr;
       gap: 0;
       max-width: 680px;
       margin: 0 auto;
+    }
+
+    .concept-body {
+      position: relative;
+      padding-left: 24px;
+      border-left: 1px solid rgba(200, 169, 110, 0.2);
     }
 
     .concept-text p {
@@ -605,13 +662,12 @@
       font-size: 1.1rem;
       color: var(--navy);
       font-weight: 500;
-      border-left: 3px solid var(--gold);
-      padding-left: 20px;
+      border-left: 3px solid transparent;
+      border-image: linear-gradient(180deg, var(--gold), var(--gold-light), transparent) 1;
       margin-top: 32px;
       line-height: 2;
       background: linear-gradient(90deg, rgba(200, 169, 110, 0.06), transparent);
       padding: 16px 20px;
-      border-radius: 0 4px 4px 0;
     }
 
     /* ========================================
@@ -1308,6 +1364,19 @@
         padding: 40px 0 80px;
       }
 
+      .concept::before {
+        font-size: 4rem;
+      }
+
+      .concept-body {
+        padding-left: 16px;
+      }
+
+      .reveal.visible .concept-intro-label::before,
+      .reveal.visible .concept-intro-label::after {
+        width: 28px;
+      }
+
       .service-card {
         padding: 36px 28px;
       }
@@ -1450,6 +1519,14 @@
     </div>
   </section>
 
+  <!-- Hero to Concept transition -->
+  <div class="wave-divider wave-divider-hero">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height: 40px;">
+      <path d="M0,30 C300,55 600,5 900,35 C1050,48 1150,15 1200,25 L1200,60 L0,60 Z" fill="var(--off-white)"/>
+      <path d="M0,32 C300,56 600,8 900,37 C1050,49 1150,18 1200,27 L1200,27 L0,32 Z" fill="none" stroke="rgba(200,169,110,0.15)" stroke-width="0.5"/>
+    </svg>
+  </div>
+
   <!-- ========================================
        Concept Section
        ======================================== -->
@@ -1457,18 +1534,21 @@
     <div class="container">
       <div class="concept-intro reveal">
         <span class="concept-intro-label">Refresh Your Space</span>
+        <span class="concept-intro-dots">&#9670; &#9670; &#9670;</span>
       </div>
       <div class="concept-inner">
         <div class="reveal">
           <p class="section-label">Concept</p>
           <h2 class="section-title">私たちの想い</h2>
           <div class="section-title-bar"></div>
-          <p class="concept-text">
-            清掃によって人々の生活空間を美しく整え、<br>よりよい生活環境を創り出す。
-          </p>
-          <p class="concept-text">
-            朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
-          </p>
+          <div class="concept-body">
+            <p class="concept-text">
+              清掃によって人々の生活空間を美しく整え、<br>よりよい生活環境を創り出す。
+            </p>
+            <p class="concept-text">
+              朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
+            </p>
+          </div>
           <p class="concept-quote">
             そんな環境つくりのお手伝いを<br>行っています。
           </p>
