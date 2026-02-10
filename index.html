@@ -552,31 +552,6 @@
       padding: 60px 0 100px;
       background: linear-gradient(180deg, var(--off-white) 0%, #f3f0eb 100%);
       position: relative;
-      overflow: hidden;
-    }
-
-    /* Watermark */
-    .concept::before {
-      content: 'PHILOSOPHY';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: var(--font-heading-en);
-      font-size: clamp(5rem, 14vw, 10rem);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--gold);
-      opacity: 0.04;
-      white-space: nowrap;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .concept > .container {
-      position: relative;
-      z-index: 1;
     }
 
     /* REFRESH YOUR SPACE intro */
@@ -637,17 +612,18 @@
 
     /* Concept body */
     .concept-inner {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0;
       max-width: 680px;
       margin: 0 auto;
+      text-align: center;
     }
 
-    .concept-body {
-      position: relative;
-      padding-left: 24px;
-      border-left: 1px solid rgba(200, 169, 110, 0.2);
+    .concept-inner .section-label {
+      display: inline-block;
+    }
+
+    .concept-inner .section-title-bar {
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .concept-text p {
@@ -655,6 +631,9 @@
       line-height: 2.2;
       color: var(--text-dark);
       margin-bottom: 16px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .concept-quote {
@@ -668,6 +647,10 @@
       line-height: 2;
       background: linear-gradient(90deg, rgba(200, 169, 110, 0.06), transparent);
       padding: 16px 20px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
     }
 
     /* ========================================
@@ -1364,14 +1347,6 @@
         padding: 40px 0 80px;
       }
 
-      .concept::before {
-        font-size: 4rem;
-      }
-
-      .concept-body {
-        padding-left: 16px;
-      }
-
       .reveal.visible .concept-intro-label::before,
       .reveal.visible .concept-intro-label::after {
         width: 28px;
@@ -1541,14 +1516,12 @@
           <p class="section-label">Concept</p>
           <h2 class="section-title">私たちの想い</h2>
           <div class="section-title-bar"></div>
-          <div class="concept-body">
-            <p class="concept-text">
-              清掃によって人々の生活空間を美しく整え、<br>よりよい生活環境を創り出す。
-            </p>
-            <p class="concept-text">
-              朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
-            </p>
-          </div>
+          <p class="concept-text">
+            清掃によって人々の生活空間を美しく整え、<br>よりよい生活環境を創り出す。
+          </p>
+          <p class="concept-text">
+            朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
+          </p>
           <p class="concept-quote">
             そんな環境つくりのお手伝いを<br>行っています。
           </p>
