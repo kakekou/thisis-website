@@ -805,13 +805,15 @@
       font-size: 2.5rem;
       font-weight: 700;
       color: var(--gold-dark);
-      margin-bottom: 4px;
+      margin-bottom: 20px;
     }
 
     .pricing-card .price-tax {
+      font-family: var(--font-body);
       font-size: 0.75rem;
+      font-weight: 400;
       color: #555555;
-      margin-bottom: 20px;
+      margin-left: 4px;
     }
 
     .pricing-card .price-desc {
@@ -883,6 +885,31 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
+    }
+
+    .pricing-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .pricing-section-btn {
+      display: inline-block;
+      padding: 10px 28px;
+      background: var(--gold);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .pricing-section-btn:hover {
+      background: #b8994e;
+      transform: translateY(-2px);
     }
 
     /* Onepoint Menu Table */
@@ -1524,6 +1551,17 @@
         margin-bottom: 4px;
       }
 
+      .pricing-section-header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .pricing-section-btn {
+        align-self: flex-end;
+        font-size: 0.8rem;
+        padding: 8px 20px;
+      }
+
       .pricing-section {
         padding: 32px 20px;
       }
@@ -1732,8 +1770,7 @@
               <h4>水廻り3セレクトパック</h4>
             </div>
             <div class="pricing-card-body">
-              <p class="price">¥38,000</p>
-              <p class="price-tax">税抜</p>
+              <p class="price">¥38,000<span class="price-tax">（税抜）</span></p>
               <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台から<br>3点選択制</p>
               <a href="#reservation" class="pricing-card-btn">予約はこちら</a>
             </div>
@@ -1747,8 +1784,7 @@
               <h4>デラックスパック</h4>
             </div>
             <div class="pricing-card-body">
-              <p class="price">¥55,000</p>
-              <p class="price-tax">税抜</p>
+              <p class="price">¥55,000<span class="price-tax">（税抜）</span></p>
               <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台の<br>まるごとパック</p>
               <a href="#reservation" class="pricing-card-btn">予約はこちら</a>
             </div>
@@ -1758,8 +1794,13 @@
 
       <!-- Onepoint Cleaning -->
       <div class="pricing-section reveal">
-        <p class="pricing-subtitle">ワンポイント清掃</p>
-        <p class="pricing-desc">必要な箇所だけピンポイントで対応いたします。</p>
+        <div class="pricing-section-header">
+          <div>
+            <p class="pricing-subtitle">ワンポイント清掃</p>
+            <p class="pricing-desc">必要な箇所だけピンポイントで対応いたします。</p>
+          </div>
+          <a href="#reservation" class="pricing-section-btn">予約はこちら</a>
+        </div>
         <table class="onepoint-table">
           <thead>
             <tr>
