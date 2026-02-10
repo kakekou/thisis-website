@@ -640,21 +640,11 @@
       margin-right: auto;
     }
 
-    .concept-quote {
-      font-family: var(--font-heading-jp);
-      font-size: 1.5rem;
-      color: var(--navy);
-      font-weight: 500;
-      border-left: 3px solid transparent;
-      border-image: linear-gradient(180deg, var(--gold), var(--gold-light), transparent) 1;
-      margin-top: 32px;
-      line-height: 2;
-      background: linear-gradient(90deg, rgba(200, 169, 110, 0.06), transparent);
-      padding: 16px 20px;
-      max-width: 560px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
+    .concept-end-line {
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 40px auto 0;
     }
 
     /* ========================================
@@ -1356,10 +1346,6 @@
         line-height: 2.2;
       }
 
-      .concept-quote {
-        font-size: 1.1rem;
-      }
-
       .reveal.visible .concept-intro-label::before,
       .reveal.visible .concept-intro-label::after {
         width: 28px;
@@ -1464,12 +1450,6 @@
         font-size: 1.5rem !important;
         line-height: 2.2 !important;
       }
-      #concept blockquote,
-      #concept .quote,
-      #concept [class*="quote"] {
-        font-size: 1.625rem !important;
-        line-height: 2.0 !important;
-      }
     }
   </style>
 </head>
@@ -1554,9 +1534,10 @@
           <p class="concept-text">
             朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
           </p>
-          <p class="concept-quote">
+          <p class="concept-text">
             そんな環境つくりのお手伝いを<br>行っています。
           </p>
+          <div class="concept-end-line"></div>
         </div>
       </div>
     </div>
