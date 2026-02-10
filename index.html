@@ -887,10 +887,10 @@
       flex-direction: column;
     }
 
-    .pricing-section-header {
+    .pricing-section-footer {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: flex-end;
+      margin-top: 24px;
     }
 
     .pricing-section-btn {
@@ -1551,13 +1551,11 @@
         margin-bottom: 4px;
       }
 
-      .pricing-section-header {
-        flex-direction: column;
-        gap: 16px;
+      .pricing-section-footer {
+        margin-top: 20px;
       }
 
       .pricing-section-btn {
-        align-self: flex-end;
         font-size: 0.8rem;
         padding: 8px 20px;
       }
@@ -1794,13 +1792,8 @@
 
       <!-- Onepoint Cleaning -->
       <div class="pricing-section reveal">
-        <div class="pricing-section-header">
-          <div>
-            <p class="pricing-subtitle">ワンポイント清掃</p>
-            <p class="pricing-desc">必要な箇所だけピンポイントで対応いたします。</p>
-          </div>
-          <a href="#reservation" class="pricing-section-btn">予約はこちら</a>
-        </div>
+        <p class="pricing-subtitle">ワンポイント清掃</p>
+        <p class="pricing-desc">必要な箇所だけピンポイントで対応いたします。</p>
         <table class="onepoint-table">
           <thead>
             <tr>
@@ -1836,6 +1829,9 @@
             </tr>
           </tbody>
         </table>
+        <div class="pricing-section-footer">
+          <a href="#reservation" class="pricing-section-btn">予約はこちら</a>
+        </div>
       </div>
     </div>
   </section>
