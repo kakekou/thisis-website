@@ -694,6 +694,10 @@
       padding: 0;
     }
 
+    .service-card-header-row {
+      display: block;
+    }
+
     .service-card-icon {
       width: 56px;
       height: 56px;
@@ -1340,8 +1344,12 @@
 
       .service-block {
         grid-template-columns: 1fr;
-        gap: 24px;
-        margin-bottom: 48px;
+        gap: 0;
+        margin: 0 16px 28px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        overflow: hidden;
       }
 
       .service-block.reverse {
@@ -1350,14 +1358,50 @@
 
       .service-img {
         order: -1;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        border-radius: 0;
+        box-shadow: none;
       }
 
       .service-img img {
         width: 100%;
-        height: 220px;
+        height: 200px;
         object-fit: cover;
-        border-radius: 8px;
+        border-radius: 0;
+      }
+
+      .service-card {
+        padding: 24px;
+      }
+
+      .service-card-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 0;
+        margin-right: 12px;
+        flex-shrink: 0;
+      }
+
+      .service-card-icon i {
+        font-size: 0.9rem;
+      }
+
+      .service-card-header-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .service-card-header-row h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: #555;
       }
 
       .concept {
@@ -1590,10 +1634,12 @@
           <img src="images/house-cleaning.png" alt="ハウスクリーニング" loading="lazy">
         </div>
         <div class="service-card reveal-right">
-          <div class="service-card-icon">
-            <i class="fas fa-home"></i>
+          <div class="service-card-header-row">
+            <div class="service-card-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>ハウスクリーニング</h3>
           </div>
-          <h3>ハウスクリーニング</h3>
           <p>退去後や入居前のお掃除から、お家のエアコンやバスルーム、キッチンなどお家の中のお掃除です。確かな技術でお家をピカピカにいたします。一か所からでもご相談くださいませ。</p>
         </div>
       </div>
@@ -1604,10 +1650,12 @@
           <img src="images/regular-cleaning.png" alt="定期清掃" loading="lazy">
         </div>
         <div class="service-card reveal-left">
-          <div class="service-card-icon">
-            <i class="fas fa-building"></i>
+          <div class="service-card-header-row">
+            <div class="service-card-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>定期清掃</h3>
           </div>
-          <h3>定期清掃</h3>
           <p>マンションやアパートの定期清掃から、オフィス・テナント・店舗などの清掃です。定期的な清掃で常に清潔な空間を維持します。お気軽にご相談くださいませ。</p>
         </div>
       </div>
