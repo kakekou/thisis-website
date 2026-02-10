@@ -612,7 +612,7 @@
 
     /* Concept body */
     .concept-inner {
-      max-width: 680px;
+      max-width: 740px;
       margin: 0 auto;
       text-align: center;
     }
@@ -621,24 +621,28 @@
       display: inline-block;
     }
 
+    .concept-inner .section-title {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+    }
+
     .concept-inner .section-title-bar {
       margin-left: auto;
       margin-right: auto;
     }
 
     .concept-text p {
-      font-size: 0.95rem;
-      line-height: 2.2;
+      font-size: 1.125rem;
+      line-height: 2;
       color: var(--text-dark);
       margin-bottom: 16px;
-      max-width: 640px;
+      max-width: 720px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .concept-quote {
       font-family: var(--font-heading-jp);
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       color: var(--navy);
       font-weight: 500;
       border-left: 3px solid transparent;
@@ -647,7 +651,7 @@
       line-height: 2;
       background: linear-gradient(90deg, rgba(200, 169, 110, 0.06), transparent);
       padding: 16px 20px;
-      max-width: 480px;
+      max-width: 560px;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
@@ -1345,6 +1349,15 @@
 
       .concept {
         padding: 40px 0 80px;
+      }
+
+      .concept-text p {
+        font-size: 0.95rem;
+        line-height: 2.2;
+      }
+
+      .concept-quote {
+        font-size: 1.1rem;
       }
 
       .reveal.visible .concept-intro-label::before,
