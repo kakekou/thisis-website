@@ -340,6 +340,11 @@
     .footer-bottom p { font-family: var(--font-heading-en); font-size: 0.7rem; color: #888888; letter-spacing: 0.1em; }
 
     /* Responsive */
+    .sp-only { display: none; }
+    @media (max-width: 767px) {
+      .sp-only { display: inline; }
+    }
+
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
