@@ -2010,22 +2010,22 @@
           <div class="section-title-bar" style="margin-left: auto; margin-right: auto;"></div>
         </div>
 
-        <form id="contactForm" class="reveal">
+        <form id="contactForm" class="reveal" action="send-contact.php" method="POST">
           <div class="form-group">
             <label class="form-label">お名前<span class="required">必須</span></label>
-            <input type="text" class="form-input" placeholder="山田 太郎" required>
+            <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
           </div>
           <div class="form-group">
             <label class="form-label">メールアドレス<span class="required">必須</span></label>
-            <input type="email" class="form-input" placeholder="example@email.com" required>
+            <input type="email" name="email" class="form-input" placeholder="example@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">電話番号<span class="required">必須</span></label>
-            <input type="tel" class="form-input" placeholder="090-1234-5678" required>
+            <input type="tel" name="phone" class="form-input" placeholder="090-1234-5678" required>
           </div>
           <div class="form-group">
             <label class="form-label">お問い合わせ内容<span class="required">必須</span></label>
-            <textarea class="form-textarea" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+            <textarea name="message" class="form-textarea" placeholder="お問い合わせ内容をご記入ください" required></textarea>
           </div>
           <button type="submit" class="btn-submit"><span>送信する — Send</span></button>
         </form>
@@ -2052,22 +2052,22 @@
           <div class="section-title-bar" style="margin-left: auto; margin-right: auto;"></div>
         </div>
 
-        <form id="reservationForm" class="reveal">
+        <form id="reservationForm" class="reveal" action="send-reserve.php" method="POST">
           <div class="form-group">
             <label class="form-label">お名前<span class="required">必須</span></label>
-            <input type="text" class="form-input" placeholder="山田 太郎" required>
+            <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
           </div>
           <div class="form-group">
             <label class="form-label">メールアドレス<span class="required">必須</span></label>
-            <input type="email" class="form-input" placeholder="example@email.com" required>
+            <input type="email" name="email" class="form-input" placeholder="example@email.com" required>
           </div>
           <div class="form-group">
             <label class="form-label">電話番号<span class="required">必須</span></label>
-            <input type="tel" class="form-input" placeholder="090-1234-5678" required>
+            <input type="tel" name="phone" class="form-input" placeholder="090-1234-5678" required>
           </div>
           <div class="form-group">
             <label class="form-label">メニュー選択<span class="required">必須</span></label>
-            <select class="form-select" required>
+            <select name="menu" class="form-select" required>
               <option value="" disabled selected>メニューをお選びください</option>
               <option value="deluxe">デラックスパック — ¥55,000</option>
               <option value="select3">水回り3セレクトパック — ¥38,000</option>
@@ -2077,12 +2077,16 @@
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label">ご希望日時</label>
-            <input type="text" class="form-input" placeholder="例: 2024年1月15日 午前中">
+            <label class="form-label">ご希望日</label>
+            <input type="text" name="date" class="form-input" placeholder="例: 2024年1月15日">
+          </div>
+          <div class="form-group">
+            <label class="form-label">ご希望時間</label>
+            <input type="text" name="time" class="form-input" placeholder="例: 午前中 / 14:00頃">
           </div>
           <div class="form-group">
             <label class="form-label">備考</label>
-            <textarea class="form-textarea" placeholder="ご要望やご質問がございましたらご記入ください" rows="4"></textarea>
+            <textarea name="message" class="form-textarea" placeholder="ご要望やご質問がございましたらご記入ください" rows="4"></textarea>
           </div>
           <button type="submit" class="btn-reserve"><span>予約する — Reserve</span></button>
         </form>
