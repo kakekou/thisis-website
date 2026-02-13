@@ -1,6 +1,7 @@
 <?php
 mb_language("Japanese");
 mb_internal_encoding("UTF-8");
+mb_detect_order("UTF-8,SJIS,EUC-JP,JIS,ASCII");
 
 $to = "info@thisis.co.jp";
 
@@ -30,9 +31,11 @@ $admin_body .= "■ 希望日: " . $date . "\n";
 $admin_body .= "■ 希望時間: " . $time . "\n";
 $admin_body .= "■ 備考:\n" . $message . "\n";
 
-$admin_headers = "From: " . $email . "\r\n";
+$admin_headers = "MIME-Version: 1.0\r\n";
+$admin_headers .= "From: info@thisis.co.jp\r\n";
 $admin_headers .= "Reply-To: " . $email . "\r\n";
-$admin_headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$admin_headers .= "Content-Type: text/plain; charset=ISO-2022-JP\r\n";
+$admin_headers .= "Content-Transfer-Encoding: 7bit\r\n";
 
 mb_send_mail($to, $admin_subject, $admin_body, $admin_headers);
 
@@ -62,9 +65,11 @@ $auto_body .= "MAIL: info@thisis.co.jp\n";
 $auto_body .= "営業時間: 9:00 - 22:00（年中無休）\n";
 $auto_body .= "━━━━━━━━━━━━━━━━━━━━\n";
 
-$auto_headers = "From: info@thisis.co.jp\r\n";
+$auto_headers = "MIME-Version: 1.0\r\n";
+$auto_headers .= "From: info@thisis.co.jp\r\n";
 $auto_headers .= "Reply-To: info@thisis.co.jp\r\n";
-$auto_headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$auto_headers .= "Content-Type: text/plain; charset=ISO-2022-JP\r\n";
+$auto_headers .= "Content-Transfer-Encoding: 7bit\r\n";
 
 mb_send_mail($email, $auto_subject, $auto_body, $auto_headers);
 
