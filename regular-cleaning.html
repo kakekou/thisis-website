@@ -208,26 +208,34 @@
       flex-direction: column;
     }
     .regular-cleaning-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12); }
-    .regular-cleaning-card-visual {
-      background: #0a1628;
-      padding: 36px 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
+    .regular-cleaning-card-img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
     }
-    .regular-cleaning-card-label {
+    .regular-cleaning-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .regular-cleaning-card-header {
+      background: var(--gold);
+      padding: 20px 24px;
+    }
+    .regular-cleaning-card-badge {
       display: inline-block;
       font-family: var(--font-heading-en);
       font-size: 0.65rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--white);
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.2);
       padding: 3px 14px;
       border-radius: 20px;
+      margin-bottom: 8px;
     }
-    .regular-cleaning-card-visual h4 {
+    .regular-cleaning-card-header h4 {
       font-family: var(--font-heading-jp);
       font-size: 1.1rem;
       font-weight: 600;
@@ -333,6 +341,7 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .regular-cleaning-cards { grid-template-columns: 1fr; }
+      .regular-cleaning-card-img { height: 180px; }
       .pricing-card-body { padding: 24px 20px 28px; }
       .footer-inner { grid-template-columns: 1fr; gap: 40px; }
       .pricing-section { padding: 32px 20px; }
@@ -407,8 +416,11 @@
         <p class="pricing-desc">お客様のニーズに合わせたプランをご用意しています。</p>
         <div class="regular-cleaning-cards">
           <div class="regular-cleaning-card reveal-scale">
-            <div class="regular-cleaning-card-visual">
-              <span class="regular-cleaning-card-label">FLOOR</span>
+            <div class="regular-cleaning-card-img">
+              <img src="images/floor-cleaning.jpg" alt="床クリーニング フロア洗浄" loading="lazy">
+            </div>
+            <div class="regular-cleaning-card-header">
+              <span class="regular-cleaning-card-badge">Floor</span>
               <h4>床クリーニング</h4>
             </div>
             <div class="pricing-card-body">
@@ -418,8 +430,11 @@
             </div>
           </div>
           <div class="regular-cleaning-card reveal-scale">
-            <div class="regular-cleaning-card-visual">
-              <span class="regular-cleaning-card-label">CARPET</span>
+            <div class="regular-cleaning-card-img">
+              <img src="images/carpet-cleaning.png" alt="カーペットクリーニング 洗浄" loading="lazy">
+            </div>
+            <div class="regular-cleaning-card-header">
+              <span class="regular-cleaning-card-badge">Carpet</span>
               <h4>カーペットクリーニング</h4>
             </div>
             <div class="pricing-card-body">
@@ -429,8 +444,11 @@
             </div>
           </div>
           <div class="regular-cleaning-card reveal-scale">
-            <div class="regular-cleaning-card-visual">
-              <span class="regular-cleaning-card-label">WASH</span>
+            <div class="regular-cleaning-card-img">
+              <img src="images/pressure-washing.png" alt="高圧洗浄作業" loading="lazy">
+            </div>
+            <div class="regular-cleaning-card-header">
+              <span class="regular-cleaning-card-badge">Wash</span>
               <h4>高圧洗浄作業</h4>
             </div>
             <div class="pricing-card-body">
