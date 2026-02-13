@@ -934,6 +934,73 @@
       transform: translateY(-2px);
     }
 
+    .regular-cleaning-section {
+      margin-top: 40px;
+    }
+
+    .regular-cleaning-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .regular-cleaning-card {
+      background: var(--white);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 6px;
+      padding: 0;
+      text-align: center;
+      transition: all var(--transition);
+      position: relative;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .regular-cleaning-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .regular-cleaning-card-visual {
+      background: #0a1628;
+      padding: 36px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .regular-cleaning-card-label {
+      display: inline-block;
+      font-family: var(--font-heading-en);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.15);
+      padding: 3px 14px;
+      border-radius: 20px;
+    }
+
+    .regular-cleaning-card-visual h4 {
+      font-family: var(--font-heading-jp);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin: 0;
+    }
+
+    .regular-cleaning-card .price {
+      font-family: var(--font-heading-jp);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 20px;
+    }
+
     /* Onepoint Menu Table */
     .onepoint-table {
       width: 100%;
@@ -1437,7 +1504,8 @@
       }
 
       .about-grid,
-      .pricing-cards {
+      .pricing-cards,
+      .regular-cleaning-cards {
         grid-template-columns: 1fr;
       }
 
@@ -1778,8 +1846,8 @@
 
       <!-- House Cleaning Plans -->
       <div class="pricing-section reveal">
-        <p class="pricing-subtitle">ハウスクリーニングプラン</p>
-        <p class="pricing-desc">お客様のニーズに合わせた2つのプランをご用意しています。</p>
+        <p class="pricing-subtitle">料金プラン</p>
+        <p class="pricing-desc">お客様のニーズに合わせたプランをご用意しています。</p>
         <div class="pricing-cards">
           <div class="pricing-card reveal-scale">
             <div class="pricing-card-img">
@@ -1807,6 +1875,45 @@
               <p class="price">¥55,000<span class="price-tax">（税抜）</span></p>
               <p class="price-desc">キッチン・トイレ・お風呂・<br>レンジフード・洗面台の<br>まるごとパック</p>
               <a href="#reservation" class="pricing-card-btn">予約はこちら</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="regular-cleaning-section">
+          <p class="pricing-subtitle">定期清掃プラン</p>
+          <div class="regular-cleaning-cards">
+            <div class="regular-cleaning-card reveal-scale">
+              <div class="regular-cleaning-card-visual">
+                <span class="regular-cleaning-card-label">FLOOR</span>
+                <h4>床クリーニング</h4>
+              </div>
+              <div class="pricing-card-body">
+                <p class="price">要お見積もり</p>
+                <p class="price-desc">オフィス・店舗・マンション共用部の床洗浄・ワックスがけ</p>
+                <a href="#contact" class="pricing-card-btn">お問い合わせ</a>
+              </div>
+            </div>
+            <div class="regular-cleaning-card reveal-scale">
+              <div class="regular-cleaning-card-visual">
+                <span class="regular-cleaning-card-label">CARPET</span>
+                <h4>カーペットクリーニング</h4>
+              </div>
+              <div class="pricing-card-body">
+                <p class="price">要お見積もり</p>
+                <p class="price-desc">オフィス・ホテル・店舗のカーペット洗浄・シミ抜き</p>
+                <a href="#contact" class="pricing-card-btn">お問い合わせ</a>
+              </div>
+            </div>
+            <div class="regular-cleaning-card reveal-scale">
+              <div class="regular-cleaning-card-visual">
+                <span class="regular-cleaning-card-label">WASH</span>
+                <h4>高圧洗浄作業</h4>
+              </div>
+              <div class="pricing-card-body">
+                <p class="price">要お見積もり</p>
+                <p class="price-desc">外壁・駐車場・エントランスなどの高圧洗浄</p>
+                <a href="#contact" class="pricing-card-btn">お問い合わせ</a>
+              </div>
             </div>
           </div>
         </div>
