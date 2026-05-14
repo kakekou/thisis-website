@@ -290,10 +290,8 @@
     .photo-pair {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: stretch;
       gap: 12px;
-    }
-    .photo-pair.portrait .photo-panel {
-      aspect-ratio: 3 / 4;
     }
     .photo-panel {
       position: relative;
@@ -302,6 +300,14 @@
       border-radius: 8px;
       background: #eef3f5;
       aspect-ratio: 4 / 3;
+    }
+    .photo-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: inherit;
+      pointer-events: none;
     }
     .photo-panel img {
       width: 100%;
@@ -356,7 +362,7 @@
       }
       .metric { min-height: auto; }
       .grid { grid-template-columns: 1fr; }
-      .photo-pair { grid-template-columns: 1fr; }
+      .photo-pair { gap: 10px; }
       .table-row { grid-template-columns: 1fr; gap: 4px; }
     }
     @media (max-width: 520px) {
@@ -374,7 +380,9 @@
       #regular .grid { gap: 12px; }
       #regular .card h3 { margin-bottom: 6px; }
       #regular .card p { margin: 0; }
-      .photo-label { font-size: 12px; min-width: 76px; }
+      .photo-panel { aspect-ratio: 1 / 1; }
+      .photo-pair { gap: 8px; }
+      .photo-label { left: 8px; top: 8px; padding: 5px 8px; font-size: 11px; min-width: 64px; }
     }
   </style>
 </head>
