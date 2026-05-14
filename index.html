@@ -212,6 +212,24 @@
     }
     .table-row strong { color: var(--main-dark); }
     .table-row span { color: var(--muted); }
+    .company-table {
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .company-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .company-row strong {
+      color: var(--main-dark);
+      font-size: 14px;
+    }
+    .company-row span {
+      color: var(--muted);
+    }
     .service-list {
       list-style: none;
       display: grid;
@@ -356,7 +374,7 @@
       .grid { grid-template-columns: 1fr; }
       .works-grid { grid-template-columns: 1fr; }
       .photo-pair { gap: 10px; }
-      .table-row { grid-template-columns: 1fr; gap: 4px; }
+      .table-row, .company-row { grid-template-columns: 1fr; gap: 4px; }
     }
     @media (max-width: 520px) {
       .site-header { padding: 12px 18px; }
@@ -537,6 +555,24 @@
         <p>未経験、短時間勤務、扶養内勤務など、希望の働き方を相談しながら始められます。</p>
       </div>
       <a class="button secondary" href="recruit.html">採用情報を見る</a>
+    </section>
+
+    <section id="company">
+      <div class="section-head">
+        <p class="eyebrow">COMPANY</p>
+        <h2>会社情報</h2>
+        <p>定期清掃、施設清掃、スポット清掃まで、現場に合わせた清掃をご提案します。</p>
+      </div>
+      <div class="company-table">
+        <div class="company-row"><strong>社名</strong><span>ThisIs株式会社</span></div>
+        <div class="company-row"><strong>本店</strong><span>〒150-0042<br>東京都渋谷区宇田川町12-3<br>ニュー渋谷コーポラス1011号室</span></div>
+        <div class="company-row"><strong>代表者</strong><span>代表取締役 塩川和弥</span></div>
+        <div class="company-row"><strong>設立</strong><span>2022年2月</span></div>
+        <div class="company-row"><strong>資本金</strong><span>100万円</span></div>
+        <div class="company-row"><strong>電話番号</strong><span><a href="tel:0359324206">03-5932-4206</a></span></div>
+        <div class="company-row"><strong>事業内容</strong><span>オフィス・テナント清掃<br>ハウスクリーニング</span></div>
+        <div class="company-row"><strong>営業時間</strong><span>9:00 - 22:00（年中無休）</span></div>
+      </div>
     </section>
 
     <section id="contact" class="cta-band">
