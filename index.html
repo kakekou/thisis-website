@@ -17,7 +17,7 @@
       --main-dark: #084d55;
       --accent: #c97824;
       --accent-soft: #fff1df;
-      --shadow: 0 20px 50px rgba(18, 34, 44, 0.14);
+      --shadow: 0 14px 34px rgba(18, 34, 44, 0.1);
     }
 
     * { box-sizing: border-box; }
@@ -39,7 +39,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 24px;
-      padding: 14px clamp(20px, 5vw, 72px);
+      padding: 12px clamp(20px, 5vw, 72px);
       background: rgba(255, 255, 255, 0.94);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(10px);
@@ -74,7 +74,7 @@
       min-height: 46px;
       padding: 0 18px;
       border: 1px solid var(--main);
-      border-radius: 6px;
+      border-radius: 5px;
       background: var(--main);
       color: #fff;
       font-weight: 800;
@@ -85,13 +85,13 @@
       background: #fff;
     }
     .hero {
-      min-height: calc(100vh - 75px);
+      min-height: calc(88vh - 70px);
       display: grid;
       grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
       gap: clamp(32px, 5vw, 76px);
       align-items: center;
       padding: clamp(42px, 6vw, 76px) clamp(20px, 5vw, 72px) 46px;
-      background: linear-gradient(90deg, #fff 0%, #fff 48%, #eef7f7 100%);
+      background: linear-gradient(90deg, #fff 0%, #fff 52%, #f0f7f8 100%);
     }
     .eyebrow {
       margin: 0 0 12px;
@@ -130,7 +130,7 @@
       aspect-ratio: 16 / 9;
       object-fit: cover;
       object-position: center;
-      border-radius: 8px;
+      border-radius: 6px;
       box-shadow: var(--shadow);
     }
     .hero-metrics {
@@ -146,7 +146,7 @@
       border: 1px solid rgba(13, 109, 117, 0.15);
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 12px 28px rgba(18, 34, 44, 0.12);
+      box-shadow: 0 8px 22px rgba(18, 34, 44, 0.08);
     }
     .metric strong {
       display: block;
@@ -162,7 +162,7 @@
       line-height: 1.55;
     }
     section {
-      padding: clamp(58px, 8vw, 92px) clamp(20px, 5vw, 72px);
+      padding: clamp(56px, 7vw, 84px) clamp(20px, 5vw, 72px);
     }
     .band { background: var(--paper); }
     .section-head {
@@ -187,7 +187,7 @@
     .card {
       padding: 24px;
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       background: #fff;
     }
     .card h3 {
@@ -265,13 +265,13 @@
     }
     .works-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
     }
     .work-card {
       padding: 18px;
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: 6px;
       background: #fff;
     }
     .work-card h3 {
@@ -357,11 +357,10 @@
       h2 { font-size: 30px; }
       .lead { font-size: 17px; }
       .hero-visual img { aspect-ratio: 4 / 3; }
-      .hero-metrics {
-        grid-template-columns: 1fr;
-      }
+      .hero-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .metric { min-height: auto; }
       .grid { grid-template-columns: 1fr; }
+      .works-grid { grid-template-columns: 1fr; }
       .photo-pair { gap: 10px; }
       .table-row { grid-template-columns: 1fr; gap: 4px; }
     }
@@ -369,14 +368,24 @@
       .site-header { padding: 12px 18px; }
       .brand { font-size: 17px; }
       .nav { gap: 14px; font-size: 13px; }
-      section, .hero { padding: 42px 18px; }
-      h1 { font-size: 34px; line-height: 1.18; }
-      h2 { font-size: 26px; }
-      .lead { font-size: 16px; }
+      section { padding: 36px 18px; }
+      .hero { padding: 30px 18px 36px; gap: 22px; }
+      h1 { font-size: 31px; line-height: 1.18; }
+      h2 { font-size: 24px; }
+      .lead { margin-top: 16px; font-size: 15px; }
       .hero-actions, .actions { display: grid; grid-template-columns: 1fr; }
       .button { width: 100%; min-height: 48px; }
-      .hero-visual img { aspect-ratio: 1 / 1; }
+      .hero-visual { gap: 8px; }
+      .hero-visual img { aspect-ratio: 4 / 3; }
+      .hero-metrics { gap: 6px; }
+      .metric { padding: 10px 8px; }
+      .metric strong { font-size: 14px; }
+      .metric span { margin-top: 3px; font-size: 11px; line-height: 1.4; }
+      .section-head { margin-bottom: 20px; }
+      .section-head p { margin-top: 10px; }
       .card, .work-card { padding: 16px; }
+      .work-card h3 { font-size: 19px; }
+      .work-card p { font-size: 14px; }
       #regular .grid { gap: 12px; }
       #regular .card h3 { margin-bottom: 6px; }
       #regular .card p { margin: 0; }
@@ -390,10 +399,9 @@
   <header class="site-header">
     <a class="brand" href="index.html"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</a>
     <nav class="nav" aria-label="主要メニュー">
-      <a href="#regular">定期清掃</a>
-      <a href="#reason">選ばれる理由</a>
-      <a href="#service">対応範囲</a>
       <a href="#works">実績写真</a>
+      <a href="#regular">清掃内容</a>
+      <a href="#reason">選ばれる理由</a>
       <a href="recruit.html">採用情報</a>
       <a class="button" href="#contact">清掃を相談する</a>
     </nav>
@@ -406,17 +414,57 @@
         <h1>定期清掃から、気になる箇所の清掃まで。</h1>
         <p class="lead">店舗、オフィス、マンション共用部、施設の美観維持を、現場の状態に合わせて支えます。排気口や水回りなど、気になる箇所の重点清掃もご相談ください。</p>
         <div class="hero-actions">
-          <a class="button" href="#contact">清掃内容を相談する</a>
-          <a class="button secondary" href="#works">実績写真を見る</a>
+          <a class="button" href="#works">清掃内容を確認する</a>
+          <a class="button secondary" href="#contact">相談する</a>
         </div>
       </div>
       <div class="hero-visual" aria-label="定期清掃のイメージ">
-        <img src="This,IS`'株_files/special-cleaning-hero.png" alt="高圧洗浄機を使う清掃スタッフ">
+        <img src="This,IS`'株_files/special-cleaning-hero.png" alt="オフィス床を磨く清掃スタッフ">
         <div class="hero-metrics">
           <div class="metric"><strong>定期清掃</strong><span>店舗・共用部・施設を継続管理</span></div>
           <div class="metric"><strong>スポット</strong><span>排気口・水回りなど重点清掃</span></div>
           <div class="metric"><strong>現地確認</strong><span>汚れ方に合わせて内容を提案</span></div>
         </div>
+      </div>
+    </section>
+
+    <section id="works" class="band">
+      <div class="section-head">
+        <p class="eyebrow">BEFORE / AFTER</p>
+        <h2>まずは、清掃後の変化をご確認ください。</h2>
+        <p>定期清掃で整える場所と、気になる箇所だけを重点的に清掃する内容を分けて掲載しています。近い実績から仕上がりを確認できます。</p>
+      </div>
+      <div class="works-grid">
+        <article class="work-card">
+          <h3>定期清掃・施設清掃</h3>
+          <p>施設や事務室の床、マンション共用部など、継続管理に近い清掃実績です。</p>
+          <div class="photo-pair" aria-label="施設事務室の床清掃前後">
+            <figure class="photo-panel">
+              <span class="photo-label">BEFORE</span>
+              <img src="This,IS`'株_files/office-floor-before.jpg" alt="施設事務室の床清掃前">
+            </figure>
+            <figure class="photo-panel">
+              <span class="photo-label after">AFTER</span>
+              <img src="This,IS`'株_files/office-floor-after.jpg" alt="施設事務室の床清掃後">
+            </figure>
+          </div>
+          <a class="button" href="regular-cleaning-works.html">定期清掃の実績を見る</a>
+        </article>
+        <article class="work-card">
+          <h3>スポット・重点清掃</h3>
+          <p>排気口フィルター、浴室鏡、換気扇など、汚れが気になる場所の清掃実績です。</p>
+          <div class="photo-pair portrait" aria-label="排気口フィルターの清掃前後">
+            <figure class="photo-panel">
+              <span class="photo-label">BEFORE</span>
+              <img src="This,IS`'株_files/vent-filter-before.jpg" alt="排気口フィルターの清掃前">
+            </figure>
+            <figure class="photo-panel">
+              <span class="photo-label after">AFTER</span>
+              <img src="This,IS`'株_files/vent-filter-after.jpg" alt="排気口フィルターの清掃後">
+            </figure>
+          </div>
+          <a class="button" href="house-cleaning-works.html">スポット清掃の実績を見る</a>
+        </article>
       </div>
     </section>
 
@@ -439,22 +487,6 @@
           <h3>重点スポット清掃</h3>
           <p>排気口、換気扇、水回り、床洗浄など、気になる箇所だけの清掃にも対応します。</p>
         </article>
-      </div>
-    </section>
-
-    <section id="reason" class="band">
-      <div class="split">
-        <div class="section-head">
-          <p class="eyebrow">WHY US</p>
-          <h2>小さなご相談から、継続清掃まで対応します。</h2>
-          <p>定期清掃のご相談はもちろん、排気口や水回りなど一部分の清掃から始めることもできます。写真や現地確認で状態を見ながら、必要な作業を整理します。</p>
-        </div>
-        <div class="table">
-          <div class="table-row"><strong>現地確認</strong><span>清掃範囲、汚れ方、利用時間を見て、無理のない頻度と作業内容を設計します。</span></div>
-          <div class="table-row"><strong>品質管理</strong><span>作業チェック、写真報告、気づきの共有により、契約後の不安を減らします。</span></div>
-          <div class="table-row"><strong>柔軟対応</strong><span>定期清掃に加えて、排気口、床洗浄、ワックス、空室清掃などのスポット作業も相談できます。</span></div>
-          <div class="table-row"><strong>スタッフ体制</strong><span>現場ごとの作業内容を共有し、清掃品質がぶれにくい体制づくりを大切にしています。</span></div>
-        </div>
       </div>
     </section>
 
@@ -492,43 +524,19 @@
       </div>
     </section>
 
-    <section id="works" class="band">
-      <div class="section-head">
-        <p class="eyebrow">BEFORE / AFTER</p>
-        <h2>実績写真を、目的別に見られます。</h2>
-        <p>共用部や施設の定期清掃と、水回り・排気口などのスポット清掃を分けて掲載しています。気になる内容に近い実績をご覧ください。</p>
-      </div>
-      <div class="works-grid">
-        <article class="work-card">
-          <h3>定期清掃・施設清掃の実績</h3>
-          <p>マンション共用部、ベランダ・踊り場、施設や事務室の床清掃など、継続管理に近い実績をまとめています。</p>
-          <div class="photo-pair" aria-label="施設事務室の床清掃前後">
-            <figure class="photo-panel">
-              <span class="photo-label">BEFORE</span>
-              <img src="This,IS`'株_files/office-floor-before.jpg" alt="施設事務室の床清掃前">
-            </figure>
-            <figure class="photo-panel">
-              <span class="photo-label after">AFTER</span>
-              <img src="This,IS`'株_files/office-floor-after.jpg" alt="施設事務室の床清掃後">
-            </figure>
-          </div>
-          <a class="button" href="regular-cleaning-works.html">定期清掃の実績を見る</a>
-        </article>
-        <article class="work-card">
-          <h3>ハウスクリーニング寄りの実績</h3>
-          <p>お風呂鏡、排気口フィルター、浴室換気扇ファンなど、気になる場所を重点的にきれいにした実績をまとめています。</p>
-          <div class="photo-pair portrait" aria-label="排気口フィルターの清掃前後">
-            <figure class="photo-panel">
-              <span class="photo-label">BEFORE</span>
-              <img src="This,IS`'株_files/vent-filter-before.jpg" alt="排気口フィルターの清掃前">
-            </figure>
-            <figure class="photo-panel">
-              <span class="photo-label after">AFTER</span>
-              <img src="This,IS`'株_files/vent-filter-after.jpg" alt="排気口フィルターの清掃後">
-            </figure>
-          </div>
-          <a class="button" href="house-cleaning-works.html">スポット清掃の実績を見る</a>
-        </article>
+    <section id="reason" class="band">
+      <div class="split">
+        <div class="section-head">
+          <p class="eyebrow">WHY US</p>
+          <h2>小さなご相談から、継続清掃まで対応します。</h2>
+          <p>定期清掃のご相談はもちろん、排気口や水回りなど一部分の清掃から始めることもできます。写真や現地確認で状態を見ながら、必要な作業を整理します。</p>
+        </div>
+        <div class="table">
+          <div class="table-row"><strong>現地確認</strong><span>清掃範囲、汚れ方、利用時間を見て、無理のない頻度と作業内容を設計します。</span></div>
+          <div class="table-row"><strong>品質管理</strong><span>作業チェック、写真報告、気づきの共有により、契約後の不安を減らします。</span></div>
+          <div class="table-row"><strong>柔軟対応</strong><span>定期清掃に加えて、排気口、床洗浄、ワックス、空室清掃などのスポット作業も相談できます。</span></div>
+          <div class="table-row"><strong>スタッフ体制</strong><span>現場ごとの作業内容を共有し、清掃品質がぶれにくい体制づくりを大切にしています。</span></div>
+        </div>
       </div>
     </section>
 
