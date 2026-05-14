@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>清掃スタッフ採用 | This,IS株式会社</title>
   <meta name="description" content="This,IS株式会社の清掃スタッフ求人ページです。未経験歓迎、短時間勤務・扶養内勤務相談可。定期清掃・施設清掃の現場で一緒に働く仲間を募集しています。">
+  <link rel="icon" href="This,IS`'株_files/company-logo-mark.png">
   <style>
     :root {
       --ink: #18222c;
@@ -38,7 +39,19 @@
       border-bottom: 1px solid var(--line);
       background: #fff;
     }
-    .brand { font-weight: 800; white-space: nowrap; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
     .nav {
       display: flex;
       align-items: center;
@@ -215,6 +228,16 @@
       background: #121b22;
     }
     footer a, footer strong { color: #fff; }
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    footer .brand-mark {
+      width: 34px;
+      height: 34px;
+    }
 
     @media (max-width: 900px) {
       .header { align-items: flex-start; flex-direction: column; gap: 10px; }
@@ -244,7 +267,7 @@
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="index.html">This,IS株式会社</a>
+    <a class="brand" href="index.html"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</a>
     <nav class="nav" aria-label="採用ページメニュー">
       <a href="#job">募集要項</a>
       <a href="#process">応募の流れ</a>
@@ -336,7 +359,7 @@
   </main>
 
   <footer>
-    <strong>This,IS株式会社</strong><br>
+    <strong class="footer-brand"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</strong><br>
     <a href="index.html">サービスサイトへ戻る</a>
   </footer>
 </body>

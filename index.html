@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>This,IS株式会社 | 定期清掃・スポット清掃</title>
   <meta name="description" content="This,IS株式会社は、店舗・オフィス・マンション共用部・施設・住まいの清掃に対応します。定期清掃から排気口や水回りなどのスポット清掃までご相談ください。">
+  <link rel="icon" href="This,IS`'株_files/company-logo-mark.png">
   <style>
     :root {
       --ink: #17212b;
@@ -44,10 +45,19 @@
       backdrop-filter: blur(10px);
     }
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       font-size: 18px;
       font-weight: 800;
       letter-spacing: 0;
       white-space: nowrap;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      flex: 0 0 auto;
     }
     .nav {
       display: flex;
@@ -321,6 +331,16 @@
       background: #121b22;
     }
     footer strong { color: #fff; }
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    footer .brand-mark {
+      width: 34px;
+      height: 34px;
+    }
 
     @media (max-width: 920px) {
       .site-header { align-items: flex-start; flex-direction: column; gap: 10px; }
@@ -360,7 +380,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">This,IS株式会社</a>
+    <a class="brand" href="index.html"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</a>
     <nav class="nav" aria-label="主要メニュー">
       <a href="#regular">定期清掃</a>
       <a href="#reason">選ばれる理由</a>
@@ -523,7 +543,7 @@
   </main>
 
   <footer>
-    <strong>This,IS株式会社</strong><br>
+    <strong class="footer-brand"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</strong><br>
     定期清掃・スポット清掃・排気口清掃・水回り清掃
   </footer>
 </body>

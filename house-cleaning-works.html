@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>重点清掃・スポット清掃の実績 | This,IS株式会社</title>
   <meta name="description" content="This,IS株式会社の重点清掃・スポット清掃実績。浴室鏡、排気口フィルター、浴室換気扇ファンなどの清掃前後を写真でご紹介します。">
+  <link rel="icon" href="This,IS`'株_files/company-logo-mark.png">
   <style>
     :root {
       --ink: #17212b;
@@ -35,7 +36,19 @@
       border-bottom: 1px solid var(--line);
       background: #fff;
     }
-    .brand { font-weight: 800; white-space: nowrap; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      flex: 0 0 auto;
+    }
     .nav {
       display: flex;
       gap: 16px;
@@ -201,6 +214,16 @@
       background: #121b22;
     }
     footer a, footer strong { color: #fff; }
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    footer .brand-mark {
+      width: 34px;
+      height: 34px;
+    }
     @media (max-width: 860px) {
       .header { align-items: flex-start; flex-direction: column; gap: 10px; }
       .nav { width: 100%; overflow-x: auto; padding-bottom: 3px; }
@@ -226,7 +249,7 @@
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="index.html">This,IS株式会社</a>
+    <a class="brand" href="index.html"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</a>
     <nav class="nav" aria-label="実績ページメニュー">
       <a href="index.html">トップ</a>
       <a href="regular-cleaning-works.html">定期清掃実績</a>
@@ -333,7 +356,7 @@
   </main>
 
   <footer>
-    <strong>This,IS株式会社</strong><br>
+    <strong class="footer-brand"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</strong><br>
     <a href="index.html">トップページへ戻る</a>
   </footer>
 </body>
