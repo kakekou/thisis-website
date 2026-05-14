@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>清掃スタッフ採用 | This,IS株式会社</title>
+  <meta name="description" content="This,IS株式会社の清掃スタッフ求人ページです。未経験歓迎、短時間勤務・扶養内勤務相談可。定期清掃・施設清掃の現場で一緒に働く仲間を募集しています。">
+  <style>
+    :root {
+      --ink: #18222c;
+      --muted: #637383;
+      --line: #dbe4ea;
+      --paper: #f7fafc;
+      --white: #fff;
+      --main: #0d6d75;
+      --main-dark: #084d55;
+      --accent: #c97824;
+      --soft: #eaf5f4;
+      --shadow: 0 18px 44px rgba(18, 34, 44, 0.13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+      background: var(--white);
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px clamp(20px, 5vw, 72px);
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .brand { font-weight: 800; white-space: nowrap; }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--main);
+      border-radius: 6px;
+      background: var(--main);
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .button.light {
+      color: var(--main-dark);
+      background: #fff;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.92fr);
+      gap: clamp(30px, 5vw, 70px);
+      align-items: center;
+      min-height: calc(100vh - 75px);
+      padding: clamp(54px, 8vw, 92px) clamp(20px, 5vw, 72px) 42px;
+      background: linear-gradient(90deg, #fff 0%, #fff 50%, #eef7f7 100%);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--main-dark);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    h1, h2, h3, p { overflow-wrap: anywhere; }
+    h1 {
+      margin: 0;
+      font-size: 54px;
+      line-height: 1.13;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: #334553;
+      font-size: 18px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .job-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 0;
+      list-style: none;
+    }
+    .job-chips li {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--main-dark);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .hero img {
+      width: 100%;
+      height: min(58vh, 580px);
+      min-height: 390px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    section {
+      padding: clamp(58px, 8vw, 92px) clamp(20px, 5vw, 72px);
+    }
+    .band { background: var(--paper); }
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.28;
+      letter-spacing: 0;
+    }
+    .section-head p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      min-height: 210px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.38;
+    }
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+      gap: clamp(30px, 5vw, 64px);
+      align-items: start;
+    }
+    .table {
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .row strong { color: var(--main-dark); }
+    .row span { color: var(--muted); }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      counter-reset: step;
+    }
+    .flow.compact {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .flow .card { min-height: 165px; }
+    .flow h3::before {
+      counter-increment: step;
+      content: counter(step, decimal-leading-zero) " ";
+      color: var(--accent);
+    }
+    .apply {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      color: #fff;
+      background: var(--main-dark);
+    }
+    .apply p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    footer {
+      padding: 34px clamp(20px, 5vw, 72px);
+      color: rgba(255, 255, 255, 0.66);
+      background: #121b22;
+    }
+    footer a, footer strong { color: #fff; }
+
+    @media (max-width: 900px) {
+      .header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav { width: 100%; overflow-x: auto; padding-bottom: 3px; }
+      .hero, .split, .apply { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      h1 { font-size: 42px; line-height: 1.16; }
+      h2 { font-size: 30px; }
+      .lead { font-size: 17px; }
+      .grid, .flow { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; gap: 4px; }
+    }
+    @media (max-width: 520px) {
+      .header { padding: 12px 18px; }
+      .nav { gap: 14px; font-size: 13px; }
+      section, .hero { padding: 42px 18px; }
+      h1 { font-size: 32px; line-height: 1.18; }
+      h2 { font-size: 26px; }
+      .lead { font-size: 16px; }
+      .actions { display: grid; grid-template-columns: 1fr; }
+      .button { width: 100%; min-height: 48px; }
+      .hero img { min-height: 0; height: auto; aspect-ratio: 4 / 3; }
+      .card { padding: 18px; }
+      .job-chips li { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html">This,IS株式会社</a>
+    <nav class="nav" aria-label="採用ページメニュー">
+      <a href="#job">募集要項</a>
+      <a href="#process">応募の流れ</a>
+      <a href="index.html">サービスサイト</a>
+      <a class="button" href="#apply">応募する</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">CLEANING STAFF RECRUIT</p>
+        <h1>きれいにする仕事は、誰かの一日を気持ちよくする仕事。</h1>
+        <p class="lead">定期清掃・施設清掃の現場で一緒に働くスタッフを募集しています。未経験の方も、道具の使い方や作業手順から丁寧に覚えられます。</p>
+        <ul class="job-chips" aria-label="募集条件の特徴">
+          <li>未経験歓迎</li>
+          <li>時給1,500円</li>
+          <li>週数日相談可</li>
+          <li>短時間勤務相談可</li>
+        </ul>
+        <div class="actions">
+          <a class="button" href="#apply">応募・問い合わせ</a>
+          <a class="button light" href="#job">募集要項を見る</a>
+        </div>
+      </div>
+      <img src="This,IS`'株_files/regular-cleaning-hero.png" alt="施設清掃の仕事風景">
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">WORK STYLE</p>
+        <h2>働き方の相談がしやすい清掃スタッフ募集。</h2>
+        <p>未経験、短時間、扶養内、ブランクありの方もご相談ください。現場の雰囲気や仕事内容を確認しながら、無理なく始められる働き方を一緒に考えます。</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>未経験歓迎</h3>
+          <p>最初は先輩スタッフと一緒に現場へ入り、道具、洗剤、作業手順、報告の仕方を確認します。</p>
+        </article>
+        <article class="card">
+          <h3>短時間勤務も相談可</h3>
+          <p>午前のみ、週数日、扶養内勤務など、現場条件に合わせて働き方を相談できます。</p>
+        </article>
+        <article class="card">
+          <h3>現場見学からでもOK</h3>
+          <p>仕事内容や雰囲気を見てから判断したい方にも、できるだけ不安が残らないよう対応します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="job" class="band">
+      <div class="split">
+        <div class="section-head">
+          <p class="eyebrow">JOB DESCRIPTION</p>
+          <h2>募集要項</h2>
+          <p>仕事内容、勤務時間、勤務地、給与の目安を確認しながらご相談いただけます。詳しい条件は面談時にすり合わせます。</p>
+        </div>
+        <div class="table">
+          <div class="row"><strong>職種</strong><span>清掃スタッフ、定期清掃スタッフ、現場補助</span></div>
+          <div class="row"><strong>仕事内容</strong><span>マンション共用部、オフィス、店舗、施設などの清掃業務</span></div>
+          <div class="row"><strong>雇用形態</strong><span>アルバイト・パート、業務委託、正社員登用相談可</span></div>
+          <div class="row"><strong>勤務時間</strong><span>午前のみ、日中、夕方以降など現場により相談</span></div>
+          <div class="row"><strong>給与</strong><span>アルバイト・パート: 時給1,500円。研修期間3ヶ月は時給1,300円。</span></div>
+          <div class="row"><strong>応募資格</strong><span>未経験歓迎、年齢不問、普通免許をお持ちの方歓迎</span></div>
+          <div class="row"><strong>勤務地</strong><span>対応エリア内の各現場。直行直帰の可否も相談</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="section-head">
+        <p class="eyebrow">PROCESS</p>
+        <h2>応募から勤務開始まで</h2>
+      </div>
+      <div class="flow compact">
+        <article class="card"><h3>応募</h3><p>電話またはメールでご連絡ください。</p></article>
+        <article class="card"><h3>面談</h3><p>希望の働き方、経験、通いやすいエリアを確認します。</p></article>
+        <article class="card"><h3>勤務開始</h3><p>最初は作業手順を一緒に確認しながら進めます。</p></article>
+      </div>
+    </section>
+
+    <section id="apply" class="apply">
+      <div>
+        <h2>まずは話を聞くだけでも大丈夫です。</h2>
+        <p>勤務時間、給与、勤務地など、気になることを気軽にお問い合わせください。</p>
+      </div>
+      <a class="button light" href="mailto:info@example.com?subject=清掃スタッフ求人への応募">応募する</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>This,IS株式会社</strong><br>
+    <a href="index.html">サービスサイトへ戻る</a>
+  </footer>
+</body>
+</html>

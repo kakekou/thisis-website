@@ -1,2352 +1,528 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThisIs株式会社 | 東京のハウスクリーニング・オフィス定期清掃</title>
-  <meta name="description" content="東京都内全域対応のThisIs株式会社。ハウスクリーニング、オフィス・テナント定期清掃、エアコンクリーニングなど、プロの技術で空間をより美しく。お見積もり無料、年中無休で対応。">
-  <meta name="keywords" content="ハウスクリーニング,東京,清掃,定期清掃,オフィス清掃,エアコンクリーニング,テナント清掃,空室クリーニング,ThisIs">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://thisis.co.jp/">
-  <!-- OGP -->
-  <meta property="og:title" content="ThisIs株式会社 | 東京のハウスクリーニング・定期清掃">
-  <meta property="og:description" content="空間をより美しく。東京都内全域対応のプロ清掃サービス。ハウスクリーニング・オフィス定期清掃・エアコン洗浄。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thisis.co.jp/">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="ThisIs株式会社">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ThisIs株式会社 | 東京のハウスクリーニング・定期清掃">
-  <meta name="twitter:description" content="空間をより美しく。東京都内全域対応のプロ清掃サービス。">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230a1628'/><text x='50' y='65' font-size='42' font-family='serif' fill='%23c8a96e' text-anchor='middle' font-weight='bold'>TI</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>This,IS株式会社 | 定期清掃・スポット清掃</title>
+  <meta name="description" content="This,IS株式会社は、店舗・オフィス・マンション共用部・施設・住まいの清掃に対応します。定期清掃から排気口や水回りなどのスポット清掃までご相談ください。">
   <style>
-    /* ========================================
-       CSS Custom Properties
-       ======================================== */
     :root {
-      color-scheme: light only;
-      --navy: #0a1628;
-      --navy-light: #132038;
-      --navy-mid: #1a2d4a;
-      --gold: #c8a96e;
-      --gold-light: #d4bc8a;
-      --gold-dark: #b08d4f;
-      --off-white: #f8f6f3;
-      --cream: #f0ece4;
-      --text-dark: #1a1a1a;
-      --text-gray: #6b7280;
-      --white: #ffffff;
-      --font-heading-jp: 'Shippori Mincho', serif;
-      --font-heading-en: 'Cormorant Garamond', serif;
-      --font-body: 'Noto Sans JP', sans-serif;
-      --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.08);
-      --shadow-md: 0 8px 30px rgba(10, 22, 40, 0.12);
-      --shadow-lg: 0 20px 60px rgba(10, 22, 40, 0.15);
+      --ink: #17212b;
+      --muted: #5f6f7f;
+      --line: #dce5eb;
+      --paper: #f6f9fb;
+      --white: #fff;
+      --main: #0d6d75;
+      --main-dark: #084d55;
+      --accent: #c97824;
+      --accent-soft: #fff1df;
+      --shadow: 0 20px 50px rgba(18, 34, 44, 0.14);
     }
 
-    /* ========================================
-       Reset & Base
-       ======================================== */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      overflow-x: hidden;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: var(--font-body);
-      color: var(--text-dark);
-      background: var(--off-white);
-      line-height: 1.8;
-      font-weight: 300;
-      overflow-x: hidden;
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.75;
+      background: var(--white);
     }
-
     img { max-width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
-    ul { list-style: none; }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ========================================
-       Section Titles
-       ======================================== */
-    .section-label {
-      font-family: var(--font-heading-en);
-      font-size: clamp(0.75rem, 1.5vw, 0.875rem);
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 8px;
-      font-weight: 600;
-      display: inline-block;
-      position: relative;
-      padding-bottom: 6px;
-    }
-
-    .section-label::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: var(--gold);
-      transition: width 0.8s ease;
-    }
-
-    .visible .section-label::after,
-    .reveal.visible .section-label::after {
-      width: 100%;
-    }
-
-    .section-title {
-      font-family: var(--font-heading-jp);
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 16px;
-      color: var(--text-dark);
-    }
-
-    .section-title-bar {
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-light));
-      margin-bottom: 40px;
-      transition: width 0.8s ease 0.3s;
-    }
-
-    .visible .section-title-bar,
-    .reveal.visible .section-title-bar {
-      width: 50px;
-    }
-
-    /* ========================================
-       Scroll Animations
-       ======================================== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-60px);
-      transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    .reveal-left.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(60px);
-      transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    .reveal-right.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    .reveal-scale {
-      opacity: 0;
-      transform: scale(0.9);
-      transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    .reveal-scale.visible {
-      opacity: 1;
-      transform: scale(1);
-    }
-
-    /* ========================================
-       Navigation
-       ======================================== */
-    .nav {
-      position: fixed;
+    a { color: inherit; text-decoration: none; }
+    .site-header {
+      position: sticky;
       top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 20px 0;
-      background: var(--white);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-      transition: all 0.5s ease;
-    }
-
-    .nav.scrolled {
-      background: var(--white);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      padding: 12px 0;
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-    }
-
-    .nav-inner {
+      z-index: 10;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 32px;
+      gap: 24px;
+      padding: 14px clamp(20px, 5vw, 72px);
+      background: rgba(255, 255, 255, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
     }
-
-    .nav-logo {
+    .brand {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .nav {
       display: flex;
       align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
     }
-
-    .nav-logo img {
-      height: 40px;
-      width: auto;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 36px;
+    .button {
+      display: inline-flex;
       align-items: center;
-    }
-
-    .nav-links a {
-      font-family: var(--font-heading-en);
-      font-size: 0.85rem;
-      color: var(--navy);
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      position: relative;
-      transition: color var(--transition);
-      font-weight: 400;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: var(--gold);
-      transition: width var(--transition);
-    }
-
-    .nav-links a:hover {
-      color: var(--gold);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      z-index: 1001;
-      padding: 4px;
-    }
-
-    .hamburger span {
-      width: 24px;
-      height: 1.5px;
-      background: var(--navy);
-      transition: all 0.3s ease;
-      transform-origin: center;
-    }
-
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(4px, 5px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(4px, -5px);
-    }
-
-    /* Mobile Menu */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(10, 22, 40, 0.98);
-      z-index: 999;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 32px;
-      opacity: 0;
-      transition: opacity 0.4s ease;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--main);
+      border-radius: 6px;
+      background: var(--main);
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.2;
     }
-
-    .mobile-menu.open {
-      display: flex;
-      opacity: 1;
+    .button.secondary {
+      color: var(--main-dark);
+      background: #fff;
     }
-
-    .mobile-menu a {
-      font-family: var(--font-heading-en);
-      font-size: 1.2rem;
-      color: var(--white);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      transition: color var(--transition);
-    }
-
-    .mobile-menu a:hover {
-      color: var(--gold);
-    }
-
-    /* ========================================
-       Hero Section
-       ======================================== */
     .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 600px;
-      display: flex;
+      min-height: calc(100vh - 75px);
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+      gap: clamp(32px, 5vw, 76px);
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      overflow: hidden;
+      padding: clamp(42px, 6vw, 76px) clamp(20px, 5vw, 72px) 46px;
+      background: linear-gradient(90deg, #fff 0%, #fff 48%, #eef7f7 100%);
     }
-
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(135deg, rgba(10, 22, 40, 0.94) 0%, rgba(19, 32, 56, 0.88) 50%, rgba(10, 22, 40, 0.92) 100%);
-      z-index: 1;
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--main-dark);
+      font-size: 14px;
+      font-weight: 900;
     }
-
-    .hero-bg::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 20% 50%, rgba(200, 169, 110, 0.1) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(200, 169, 110, 0.07) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 80%, rgba(200, 169, 110, 0.08) 0%, transparent 50%);
-      animation: bgShimmer 8s ease-in-out infinite alternate;
+    h1, h2, h3, p { overflow-wrap: anywhere; }
+    h1 {
+      margin: 0;
+      font-size: 56px;
+      line-height: 1.13;
+      letter-spacing: 0;
     }
-
-    @keyframes bgShimmer {
-      0% { opacity: 0.6; }
-      100% { opacity: 1; }
+    .lead {
+      max-width: 720px;
+      margin: 22px 0 0;
+      color: #334552;
+      font-size: 18px;
     }
-
-    .hero-particles {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .particle {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: rgba(200, 169, 110, 0.3);
-      border-radius: 50%;
-      animation: float-particle linear infinite;
-    }
-
-    @keyframes float-particle {
-      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 0 24px;
-    }
-
-    .hero-sub {
-      font-family: var(--font-heading-en);
-      font-size: clamp(0.7rem, 1.5vw, 0.875rem);
-      color: var(--gold);
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      opacity: 0;
-      animation: fadeInUp 1s 0.3s forwards;
-    }
-
-    .hero-title {
-      font-family: var(--font-heading-jp);
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      color: var(--white);
-      font-weight: 600;
-      letter-spacing: 0.15em;
-      line-height: 1.5;
-      margin-bottom: 24px;
-      opacity: 0;
-      animation: fadeInUp 1s 0.6s forwards;
-      text-shadow: 0 0 40px rgba(200, 169, 110, 0.2), 0 0 80px rgba(200, 169, 110, 0.1);
-    }
-
-    .hero-title-bar {
-      width: 80px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      margin: 0 auto 24px;
-      opacity: 0;
-      animation: fadeInUp 1s 0.8s forwards, barGlow 3s ease-in-out 2s infinite alternate;
-    }
-
-    @keyframes barGlow {
-      0% { box-shadow: 0 0 8px rgba(200, 169, 110, 0.3); width: 80px; }
-      100% { box-shadow: 0 0 20px rgba(200, 169, 110, 0.5); width: 100px; }
-    }
-
-    .hero-desc {
-      font-family: var(--font-heading-en);
-      font-size: clamp(0.75rem, 1.2vw, 0.875rem);
-      color: rgba(255, 255, 255, 0.8);
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      opacity: 0;
-      animation: fadeInUp 1s 1s forwards;
-    }
-
-    .hero-cta {
-      display: inline-block;
-      padding: 14px 40px;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      font-family: var(--font-heading-en);
-      font-size: 0.85rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      border-radius: 3px;
-      transition: all 0.5s ease;
-      position: relative;
-      overflow: hidden;
-      opacity: 0;
-      animation: fadeInUp 1s 1.2s forwards;
-    }
-
-    .hero-cta::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: var(--gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.5s ease;
-      z-index: 0;
-    }
-
-    .hero-cta span {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-cta:hover {
-      color: var(--navy);
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(200, 169, 110, 0.3);
-    }
-
-    .hero-cta:hover::before {
-      transform: scaleX(1);
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 2;
+    .hero-actions {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      opacity: 0;
-      animation: fadeInUp 1s 1.4s forwards;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
     }
-
-    .scroll-indicator span {
-      font-family: var(--font-heading-en);
-      font-size: 0.65rem;
-      color: rgba(255, 255, 255, 0.6);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    .scroll-line {
-      width: 1px;
-      height: 30px;
-      background: linear-gradient(to bottom, var(--gold), transparent);
-      animation: scrollPulse 2s ease-in-out infinite;
-    }
-
-    @keyframes scrollPulse {
-      0%, 100% { opacity: 1; transform: scaleY(1); }
-      50% { opacity: 0.3; transform: scaleY(0.6); }
-    }
-
-    /* ========================================
-       SVG Wave Dividers
-       ======================================== */
-    .wave-divider {
+    .hero-visual {
       position: relative;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
+      display: grid;
+      gap: 12px;
+      min-height: 0;
     }
-
-    .wave-divider svg {
-      display: block;
+    .hero-visual img {
       width: 100%;
       height: auto;
-    }
-
-    .wave-divider-top {
-      margin-bottom: -2px;
-    }
-
-    .wave-divider-bottom {
-      margin-top: -2px;
-    }
-
-    .wave-divider-hero {
-      margin-top: -2px;
-      background: var(--navy);
-    }
-
-    /* ========================================
-       Concept Section
-       ======================================== */
-    .concept {
-      padding: 60px 0 100px;
-      background: linear-gradient(180deg, var(--off-white) 0%, #f3f0eb 100%);
-      position: relative;
-    }
-
-    /* REFRESH YOUR SPACE intro */
-    .concept-intro {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-
-    .concept-intro-label {
-      font-family: var(--font-heading-en);
-      font-size: clamp(0.7rem, 1.2vw, 0.8rem);
-      letter-spacing: 0.4em;
-      text-transform: uppercase;
-      background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      display: inline-block;
-      position: relative;
-      padding: 0 28px;
-    }
-
-    .concept-intro-label::before,
-    .concept-intro-label::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 0;
-      height: 1px;
-      transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
-    }
-
-    .concept-intro-label::before {
-      right: 100%;
-      background: linear-gradient(90deg, transparent, var(--gold));
-      transform-origin: right;
-    }
-
-    .concept-intro-label::after {
-      left: 100%;
-      background: linear-gradient(90deg, var(--gold), transparent);
-      transform-origin: left;
-    }
-
-    .reveal.visible .concept-intro-label::before,
-    .reveal.visible .concept-intro-label::after {
-      width: 48px;
-    }
-
-    .concept-intro-dots {
-      display: block;
-      margin-top: 12px;
-      font-size: 0.5rem;
-      letter-spacing: 0.6em;
-      color: var(--gold);
-      opacity: 0.5;
-    }
-
-    /* Concept body */
-    .concept-inner {
-      max-width: 740px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .concept-inner .section-label {
-      display: inline-block;
-    }
-
-    .concept-inner .section-title {
-      font-size: 3.5rem;
-    }
-
-    .concept-inner .section-title-bar {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .concept-text p {
-      font-size: 1.375rem;
-      line-height: 2.2;
-      color: var(--text-dark);
-      margin-bottom: 16px;
-      max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .concept-end-line {
-      width: 80px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      margin: 40px auto 0;
-    }
-
-    /* ========================================
-       Service Section
-       ======================================== */
-    .service {
-      padding: 80px 0 120px;
-      background: linear-gradient(180deg, var(--white) 0%, #faf9f7 100%);
-      position: relative;
-    }
-
-    .service-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-      margin-bottom: 64px;
-    }
-
-    .service-block.reverse {
-      direction: rtl;
-    }
-
-    .service-block.reverse > * {
-      direction: ltr;
-    }
-
-    .service-img {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    .service-img img {
-      width: 100%;
-      height: 100%;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .service-img:hover img {
-      transform: scale(1.03);
-    }
-
-    .service-card {
-      padding: 0;
-    }
-
-    .service-card-header-row {
-      display: block;
-    }
-
-    .service-card-icon {
-      width: 56px;
-      height: 56px;
-      background: rgba(200, 169, 110, 0.1);
-      border: 1px solid rgba(200, 169, 110, 0.3);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
-
-    .service-card-icon i {
-      font-size: 1.2rem;
-      color: var(--gold-dark);
-    }
-
-    .service-card h3 {
-      font-family: var(--font-heading-jp);
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: var(--text-dark);
-    }
-
-    .service-card p {
-      font-size: 0.875rem;
-      line-height: 2;
-      color: #555555;
-    }
-
-    .service-detail-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 28px;
-      border: 2px solid #c8a96e;
-      background: transparent;
-      color: #c8a96e;
-      font-size: 0.85rem;
-      letter-spacing: 0.1em;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-    }
-
-    .service-detail-btn:hover {
-      background: #c8a96e;
-      color: #ffffff;
-    }
-
-    /* Pricing */
-    .pricing-section {
-      background: #f2f0ed;
+      object-position: center;
       border-radius: 8px;
-      padding: 48px 40px;
-      margin-top: 40px;
+      box-shadow: var(--shadow);
     }
-
-    .pricing-subtitle {
-      font-family: var(--font-heading-jp);
-      font-size: 1.35rem;
-      font-weight: 600;
-      color: var(--text-dark);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .pricing-subtitle::before {
-      content: '';
-      width: 24px;
-      height: 1px;
-      background: var(--gold);
-    }
-
-    .pricing-desc {
-      font-size: 0.85rem;
-      color: #555555;
-      margin-bottom: 32px;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-    }
-
-    .pricing-card.featured {
-      border-color: var(--gold);
-    }
-
-    .pricing-card-header {
-      background: var(--gold);
-      padding: 20px 24px;
-    }
-
-    .pricing-card.featured .pricing-card-header {
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-    }
-
-    .pricing-card-badge {
-      display: inline-block;
-      font-family: var(--font-heading-en);
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: rgba(255, 255, 255, 0.2);
-      padding: 3px 14px;
-      border-radius: 20px;
-      margin-bottom: 8px;
-    }
-
-    .pricing-card h4 {
-      font-family: var(--font-heading-jp);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 0;
-    }
-
-    .pricing-card .price {
-      font-family: var(--font-heading-en);
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--gold-dark);
-      margin-bottom: 20px;
-    }
-
-    .pricing-card .price-tax {
-      font-family: var(--font-body);
-      font-size: 0.75rem;
-      font-weight: 400;
-      color: #555555;
-      margin-left: 4px;
-    }
-
-    .pricing-card .price-desc {
-      font-size: 0.8rem;
-      line-height: 1.8;
-      color: #555555;
-      margin-bottom: 24px;
-    }
-
-    .pricing-card-img {
-      width: 100%;
-      height: 180px;
-      overflow: hidden;
-    }
-
-    .pricing-card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .pricing-card-btn {
-      display: block;
-      width: 100%;
-      padding: 12px 32px;
-      background: var(--gold);
-      color: #ffffff;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.95rem;
-      letter-spacing: 0.1em;
-      transition: all 0.3s ease;
-      box-sizing: border-box;
-      margin-top: auto;
-    }
-
-    .pricing-card-btn:hover {
-      background: #b8994e;
-      transform: translateY(-2px);
-    }
-
-    .pricing-card-body {
-      padding: 32px 36px 36px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-grow: 1;
-    }
-
-    .pricing-cards {
+    .hero-metrics {
+      position: static;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-bottom: 64px;
-      align-items: stretch;
+      grid-template-columns: repeat(3, minmax(110px, 1fr));
+      gap: 10px;
+      width: 100%;
     }
-
-    .pricing-card {
-      background: var(--white);
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 6px;
-      padding: 0;
-      text-align: center;
-      transition: all var(--transition);
-      position: relative;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
+    .metric {
+      min-height: 94px;
+      padding: 14px;
+      border: 1px solid rgba(13, 109, 117, 0.15);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 28px rgba(18, 34, 44, 0.12);
     }
-
-    .pricing-section-footer {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 24px;
+    .metric strong {
+      display: block;
+      color: var(--main-dark);
+      font-size: 21px;
+      line-height: 1.25;
     }
-
-    .pricing-section-btn {
-      display: inline-block;
-      padding: 10px 28px;
-      background: var(--gold);
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      letter-spacing: 0.1em;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-      flex-shrink: 0;
+    .metric span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
     }
-
-    .pricing-section-btn:hover {
-      background: #b8994e;
-      transform: translateY(-2px);
+    section {
+      padding: clamp(58px, 8vw, 92px) clamp(20px, 5vw, 72px);
     }
-
-    .regular-cleaning-section {
-      margin-top: 40px;
+    .band { background: var(--paper); }
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 30px;
     }
-
-    .regular-cleaning-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 32px;
-      align-items: stretch;
-    }
-
-    .regular-cleaning-card {
-      background: var(--white);
-      border: 1px solid rgba(0, 0, 0, 0.06);
-      border-radius: 6px;
-      padding: 0;
-      text-align: center;
-      transition: all var(--transition);
-      position: relative;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .regular-cleaning-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-    }
-
-    .regular-cleaning-card-visual {
-      background: #0a1628;
-      padding: 36px 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .regular-cleaning-card-label {
-      display: inline-block;
-      font-family: var(--font-heading-en);
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: rgba(255, 255, 255, 0.15);
-      padding: 3px 14px;
-      border-radius: 20px;
-    }
-
-    .regular-cleaning-card-visual h4 {
-      font-family: var(--font-heading-jp);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--white);
+    h2 {
       margin: 0;
+      font-size: 38px;
+      line-height: 1.28;
+      letter-spacing: 0;
     }
-
-    .regular-cleaning-card .price {
-      font-family: var(--font-heading-jp);
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--gold-dark);
-      margin-bottom: 20px;
+    .section-head p {
+      margin: 14px 0 0;
+      color: var(--muted);
     }
-
-    /* Onepoint Menu Table */
-    .onepoint-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin-top: 24px;
-      background: var(--white);
-      border-radius: 6px;
-      overflow: hidden;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-      border: 1px solid rgba(0, 0, 0, 0.06);
-    }
-
-    .onepoint-table thead th {
-      font-family: var(--font-heading-en);
-      font-size: 0.75rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--white);
-      background: var(--gold);
-      padding: 14px 24px;
-      text-align: left;
-      font-weight: 600;
-    }
-
-    .onepoint-table tbody td {
-      padding: 20px 24px;
-      font-size: 0.875rem;
-      color: #555555;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-      vertical-align: top;
-    }
-
-    .onepoint-table tbody tr:last-child td {
-      border-bottom: none;
-    }
-
-    .onepoint-table tbody tr {
-      transition: background var(--transition);
-    }
-
-    .onepoint-table tbody tr:hover {
-      background: rgba(200, 169, 110, 0.06);
-    }
-
-    .onepoint-table .menu-name {
-      font-family: var(--font-heading-jp);
-      font-weight: 500;
-      color: var(--text-dark);
-    }
-
-    .onepoint-table .menu-price {
-      font-family: var(--font-heading-en);
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--gold-dark);
-      white-space: nowrap;
-    }
-
-    .onepoint-table .menu-note {
-      font-size: 0.78rem;
-      color: #777777;
-      margin-top: 4px;
-    }
-
-    /* ========================================
-       About Section
-       ======================================== */
-    .about {
-      padding: 120px 0;
-      background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
-      position: relative;
-    }
-
-    .about-grid {
+    .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      min-height: 220px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.38;
+    }
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+      gap: clamp(30px, 5vw, 66px);
       align-items: start;
     }
-
-    .company-table {
-      width: 100%;
-      border-collapse: collapse;
+    .table {
+      border-top: 1px solid var(--line);
+      background: #fff;
     }
-
-    .company-table tr {
-      border-bottom: 1px solid rgba(200, 169, 110, 0.15);
-    }
-
-    .company-table th {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--gold-dark);
+    .table-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 20px;
       padding: 18px 0;
-      text-align: left;
-      width: 120px;
-      vertical-align: top;
+      border-bottom: 1px solid var(--line);
     }
-
-    .company-table td {
-      font-size: 0.875rem;
-      color: var(--text-dark);
-      padding: 18px 0 18px 20px;
-      line-height: 1.8;
+    .table-row strong { color: var(--main-dark); }
+    .table-row span { color: var(--muted); }
+    .service-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
     }
-
-    .map-container {
-      border-radius: 6px;
+    .service-list li {
+      position: relative;
+      padding-left: 28px;
+    }
+    .service-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.78em;
+      width: 14px;
+      height: 2px;
+      background: var(--accent);
+    }
+    .cta-band {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      color: #fff;
+      background: var(--main-dark);
+    }
+    .cta-band p {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+    }
+    .recruit-strip {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--accent-soft);
+    }
+    .recruit-strip p {
+      margin: 8px 0 0;
+      color: #5f4630;
+    }
+    .works-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 18px;
+    }
+    .work-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .work-card h3 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      line-height: 1.35;
+    }
+    .work-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .work-card .button {
+      margin-top: 4px;
+    }
+    .photo-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .photo-pair.portrait .photo-panel {
+      aspect-ratio: 3 / 4;
+    }
+    .photo-panel {
+      position: relative;
       overflow: hidden;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-      aspect-ratio: 1 / 1;
-      border: 2px solid rgba(200, 169, 110, 0.2);
+      margin: 0;
+      border-radius: 8px;
+      background: #eef3f5;
+      aspect-ratio: 4 / 3;
     }
-
-    .map-container iframe {
+    .photo-panel img {
       width: 100%;
       height: 100%;
-      border: 0;
+      object-fit: cover;
     }
-
-    /* ========================================
-       Contact Section
-       ======================================== */
-    .contact {
-      padding: 48px 0 120px;
-      background: linear-gradient(180deg, var(--off-white) 0%, #f3f0eb 100%);
-      position: relative;
-    }
-
-    .contact-inner {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .form-group {
-      margin-bottom: 28px;
-    }
-
-    .form-label {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--text-dark);
-      margin-bottom: 8px;
-      letter-spacing: 0.05em;
-    }
-
-    .form-label .required {
-      font-size: 0.65rem;
-      color: var(--gold-dark);
-      margin-left: 6px;
-      letter-spacing: 0.1em;
-    }
-
-    .form-input,
-    .form-textarea,
-    .form-select {
-      width: 100%;
-      padding: 14px 18px;
-      background: var(--white);
-      border: 1px solid rgba(10, 22, 40, 0.12);
-      border-radius: 3px;
-      color: var(--text-dark);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      transition: all var(--transition);
-      outline: none;
-    }
-
-    .form-input::placeholder,
-    .form-textarea::placeholder {
-      color: rgba(10, 22, 40, 0.3);
-    }
-
-    .form-input:focus,
-    .form-textarea:focus,
-    .form-select:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(200, 169, 110, 0.12);
-    }
-
-    .form-textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    .form-select {
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='%23c8a96e'%3E%3Cpath d='M6 8L0 0h12z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      cursor: pointer;
-    }
-
-    .form-select option {
-      background: var(--white);
-      color: var(--text-dark);
-    }
-
-    .btn-submit {
-      width: 100%;
-      padding: 16px;
-      background: var(--gold);
-      border: 1px solid var(--gold);
-      color: var(--white);
-      font-family: var(--font-heading-en);
-      font-size: 0.9rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all var(--transition);
-      border-radius: 3px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-submit::before {
-      content: '';
+    .photo-label {
       position: absolute;
-      inset: 0;
-      background: var(--navy);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform var(--transition);
-      z-index: 0;
-    }
-
-    .btn-submit span {
-      position: relative;
-      z-index: 1;
-    }
-
-    .btn-submit:hover {
-      color: var(--white);
-      border-color: var(--navy);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(200, 169, 110, 0.3);
-    }
-
-    .btn-submit:hover::before {
-      transform: scaleX(1);
-    }
-
-    /* ========================================
-       Reservation Section
-       ======================================== */
-    .reservation {
-      padding: 120px 0;
-      background: var(--white);
-      position: relative;
-    }
-
-    .reservation-inner {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .btn-reserve {
-      width: 100%;
-      padding: 16px;
-      background: transparent;
-      border: 1px solid var(--gold);
-      color: var(--gold-dark);
-      font-family: var(--font-heading-en);
-      font-size: 0.9rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all var(--transition);
-      border-radius: 3px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-reserve::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: var(--gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform var(--transition);
-      z-index: 0;
-    }
-
-    .btn-reserve span {
-      position: relative;
-      z-index: 1;
-    }
-
-    .btn-reserve:hover {
-      color: var(--white);
-      border-color: var(--gold);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(200, 169, 110, 0.3);
-    }
-
-    .btn-reserve:hover::before {
-      transform: scaleX(1);
-    }
-
-    /* ========================================
-       Footer
-       ======================================== */
-    .footer {
-      background: var(--off-white);
-      padding: 80px 0 0;
-      color: var(--text-dark);
-      border-top: 1px solid #e0d6c8;
-    }
-
-    .footer-inner {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 60px;
-      padding-bottom: 60px;
-      border-bottom: 1px solid #e0d6c8;
-    }
-
-    .footer-logo {
-      margin-bottom: 20px;
-    }
-
-    .footer-logo img {
-      height: 60px;
-      width: auto;
-    }
-
-    .footer-info p {
-      font-size: 0.8rem;
-      color: #555555;
-      line-height: 2;
-    }
-
-    .footer-info .footer-tel {
-      font-family: var(--font-heading-en);
-      font-size: 1.1rem;
-      color: var(--gold-dark);
-      letter-spacing: 0.05em;
-      margin: 12px 0;
-    }
-
-    .footer-heading {
-      font-family: var(--font-heading-en);
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold-dark);
-      margin-bottom: 20px;
-    }
-
-    .footer-links a {
-      display: block;
-      font-size: 0.8rem;
-      color: var(--text-dark);
-      padding: 6px 0;
-      transition: color var(--transition);
-    }
-
-    .footer-links a:hover {
-      color: var(--gold);
-    }
-
-    .footer-social {
-      display: flex;
-      gap: 16px;
-      margin-top: 8px;
-    }
-
-    .footer-social a {
-      width: 40px;
-      height: 40px;
-      border: 1px solid rgba(26, 26, 26, 0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-dark);
-      transition: all var(--transition);
-    }
-
-    .footer-social a:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-      background: rgba(200, 169, 110, 0.08);
-    }
-
-    .footer-cta {
-      margin-top: 24px;
-    }
-
-    .footer-cta a {
-      display: inline-block;
-      padding: 10px 28px;
-      border: 1px solid var(--gold);
-      color: var(--gold-dark);
-      font-family: var(--font-heading-en);
-      font-size: 0.75rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      transition: all var(--transition);
-      border-radius: 3px;
-    }
-
-    .footer-cta a:hover {
-      background: var(--gold);
-      color: var(--white);
-    }
-
-    .footer-bottom {
-      padding: 24px 0;
+      left: 12px;
+      top: 12px;
+      min-width: 84px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      color: #fff;
+      background: rgba(18, 27, 34, 0.78);
+      font-size: 13px;
+      font-weight: 900;
       text-align: center;
-      background: #f0ece4;
+      line-height: 1.2;
     }
-
-    .footer-bottom p {
-      font-family: var(--font-heading-en);
-      font-size: 0.7rem;
-      color: #888888;
-      letter-spacing: 0.1em;
+    .photo-label.after {
+      background: rgba(13, 109, 117, 0.88);
     }
-
-    /* ========================================
-       Toast Notification
-       ======================================== */
-    .toast {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      background: var(--white);
-      color: var(--text-dark);
-      padding: 16px 28px;
-      border-radius: 4px;
-      border-left: 3px solid var(--gold);
-      font-size: 0.85rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-      transform: translateY(20px);
-      opacity: 0;
-      transition: all 0.4s ease;
-      z-index: 2000;
-      pointer-events: none;
+    footer {
+      padding: 34px clamp(20px, 5vw, 72px);
+      color: rgba(255, 255, 255, 0.66);
+      background: #121b22;
     }
+    footer strong { color: #fff; }
 
-    .toast.show {
-      transform: translateY(0);
-      opacity: 1;
-    }
-
-    /* ========================================
-       Parallax
-       ======================================== */
-    .parallax-section {
-      position: relative;
-      padding: 100px 0;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .parallax-bg {
-      position: absolute;
-      inset: 0;
-      background: var(--navy);
-      z-index: 0;
-    }
-
-    .parallax-content {
-      position: relative;
-      z-index: 1;
-      opacity: 1 !important;
-    }
-
-    .parallax-quote {
-      font-family: var(--font-heading-jp);
-      font-size: clamp(1.3rem, 3vw, 1.8rem);
-      color: #ffffff;
-      font-weight: 600;
-      line-height: 2;
-      letter-spacing: 0.1em;
-      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.2);
-    }
-
-    .parallax-quote span {
-      color: var(--gold-light);
-      text-shadow: 0 0 20px rgba(200, 169, 110, 0.3);
-    }
-
-    /* ========================================
-       Responsive
-       ======================================== */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-
-      .service {
-        padding: 40px 0 80px;
-      }
-
-      .wave-divider svg {
-        height: 40px !important;
-      }
-
-      .about-grid,
-      .pricing-cards,
-      .regular-cleaning-cards {
+    @media (max-width: 920px) {
+      .site-header { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .nav { width: 100%; overflow-x: auto; padding-bottom: 3px; }
+      .hero, .split, .cta-band, .recruit-strip { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      h1 { font-size: 42px; line-height: 1.16; }
+      h2 { font-size: 30px; }
+      .lead { font-size: 17px; }
+      .hero-visual img { aspect-ratio: 4 / 3; }
+      .hero-metrics {
         grid-template-columns: 1fr;
       }
-
-      .service-block {
-        grid-template-columns: 1fr;
-        gap: 0;
-        margin: 0 16px 28px;
-        background: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-        overflow: hidden;
-      }
-
-      .service-block.reverse {
-        direction: ltr;
-      }
-
-      .service-img {
-        order: -1;
-        margin-bottom: 0;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      .service-img img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 0;
-      }
-
-      .service-card {
-        padding: 24px;
-      }
-
-      .service-card-icon {
-        width: 36px;
-        height: 36px;
-        margin-bottom: 0;
-        margin-right: 12px;
-        flex-shrink: 0;
-      }
-
-      .service-card-icon i {
-        font-size: 0.9rem;
-      }
-
-      .service-card-header-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 16px;
-      }
-
-      .service-card-header-row h3 {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-bottom: 0;
-      }
-
-      .service-card p {
-        font-size: 0.95rem;
-        line-height: 1.8;
-        color: #555;
-      }
-
-      .concept {
-        padding: 40px 0 80px;
-      }
-
-      .concept-text p {
-        font-size: 0.95rem;
-        line-height: 2.2;
-      }
-
-      .reveal.visible .concept-intro-label::before,
-      .reveal.visible .concept-intro-label::after {
-        width: 28px;
-      }
-
-      .pricing-card {
-        padding: 0;
-      }
-
-      .pricing-card-img {
-        height: 160px;
-      }
-
-      .pricing-card-body {
-        padding: 24px 20px 28px;
-      }
-
-      .footer-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .onepoint-table {
-        background: none;
-        border: none;
-        box-shadow: none;
-      }
-
-      .onepoint-table thead { display: none; }
-
-      .onepoint-table,
-      .onepoint-table tbody {
-        display: block;
-        width: 100%;
-      }
-
-      .onepoint-table tr {
-        display: block;
-        background: var(--white);
-        border-radius: 6px;
-        padding: 20px 24px;
-        margin-bottom: 12px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-        border: 1px solid rgba(0, 0, 0, 0.06);
-      }
-
-      .onepoint-table td {
-        display: block;
-        padding: 2px 0;
-        border: none;
-      }
-
-      .onepoint-table td:first-child {
-        font-size: 0.95rem;
-        margin-bottom: 4px;
-      }
-
-      .pricing-section-footer {
-        margin-top: 20px;
-      }
-
-      .pricing-section-btn {
-        font-size: 0.8rem;
-        padding: 8px 20px;
-      }
-
-      .pricing-section {
-        padding: 32px 20px;
-      }
-
-      .contact {
-        padding: 20px 0 60px;
-      }
-
-      .toast {
-        left: 16px;
-        right: 16px;
-        bottom: 16px;
-      }
+      .metric { min-height: auto; }
+      .grid { grid-template-columns: 1fr; }
+      .photo-pair { grid-template-columns: 1fr; }
+      .table-row { grid-template-columns: 1fr; gap: 4px; }
     }
-
-    @media (max-width: 480px) {
-      .hero-title {
-        letter-spacing: 0.08em;
-      }
-
-      .section-title {
-        font-size: 1.5rem;
-      }
-
-      .company-table th {
-        display: block;
-        width: 100%;
-        padding-bottom: 2px;
-        border: none;
-        color: var(--gold-dark);
-        font-size: 0.75rem;
-      }
-
-      .company-table td {
-        display: block;
-        padding: 0 0 16px 0;
-      }
-
-      .company-table tr {
-        display: block;
-        padding: 12px 0;
-      }
-    }
-
-    /* ========================================
-       Concept Font Size Override (PC)
-       ======================================== */
-    @media (min-width: 768px) {
-      #concept h2 {
-        font-size: 4rem !important;
-      }
-      #concept p {
-        font-size: 1.5rem !important;
-        line-height: 2.2 !important;
-      }
+    @media (max-width: 520px) {
+      .site-header { padding: 12px 18px; }
+      .brand { font-size: 17px; }
+      .nav { gap: 14px; font-size: 13px; }
+      section, .hero { padding: 42px 18px; }
+      h1 { font-size: 34px; line-height: 1.18; }
+      h2 { font-size: 26px; }
+      .lead { font-size: 16px; }
+      .hero-actions, .actions { display: grid; grid-template-columns: 1fr; }
+      .button { width: 100%; min-height: 48px; }
+      .hero-visual img { aspect-ratio: 1 / 1; }
+      .card, .work-card { padding: 18px; }
+      .photo-label { font-size: 12px; min-width: 76px; }
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html">This,IS株式会社</a>
+    <nav class="nav" aria-label="主要メニュー">
+      <a href="#regular">定期清掃</a>
+      <a href="#reason">選ばれる理由</a>
+      <a href="#service">対応範囲</a>
+      <a href="#works">実績写真</a>
+      <a href="recruit.html">採用情報</a>
+      <a class="button" href="#contact">清掃を相談する</a>
+    </nav>
+  </header>
 
-  <!-- ========================================
-       Navigation
-       ======================================== -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#home" class="nav-logo"><img src="images/会社ロゴ横長.png" alt="ThisIs株式会社 ロゴ"></a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#concept">Concept</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#reservation">Reserve</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger" aria-label="メニューを開く" role="button" tabindex="0">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#concept">Concept</a>
-    <a href="#service">Service</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#reservation">Reserve</a>
-  </div>
-
-  <!-- ========================================
-       Hero Section
-       ======================================== -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-particles" id="particles"></div>
-    <div class="hero-content">
-      <p class="hero-sub">Cleaning &amp; Maintenance</p>
-      <h1 class="hero-title"><span class="sr-only">ThisIs株式会社 — </span>空間をより美しく。</h1>
-      <div class="hero-title-bar"></div>
-      <p class="hero-desc">ThisIs Co., Ltd.</p>
-      <a href="#service" class="hero-cta"><span>View Services</span></a>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- Hero to Concept transition -->
-  <div class="wave-divider wave-divider-hero">
-    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height: 40px;">
-      <path d="M0,30 C300,55 600,5 900,35 C1050,48 1150,15 1200,25 L1200,60 L0,60 Z" fill="var(--off-white)"/>
-      <path d="M0,32 C300,56 600,8 900,37 C1050,49 1150,18 1200,27 L1200,27 L0,32 Z" fill="none" stroke="rgba(200,169,110,0.15)" stroke-width="0.5"/>
-    </svg>
-  </div>
-
-  <!-- ========================================
-       Concept Section
-       ======================================== -->
-  <section class="concept" id="concept">
-    <div class="container">
-      <div class="concept-intro reveal">
-        <span class="concept-intro-label">Refresh Your Space</span>
-        <span class="concept-intro-dots">&#9670; &#9670; &#9670;</span>
-      </div>
-      <div class="concept-inner">
-        <div class="reveal">
-          <p class="section-label">Concept</p>
-          <h2 class="section-title">私たちの想い</h2>
-          <div class="section-title-bar"></div>
-          <p class="concept-text">
-            清掃によって人々の生活空間を美しく整え、<br>よりよい生活環境を創り出す。
-          </p>
-          <p class="concept-text">
-            朝起きて、窓を開ける。<br>新鮮な空間で気分もよくなる。<br>清掃によって清爽とした気持ちへ。
-          </p>
-          <p class="concept-text">
-            そんな環境つくりのお手伝いを行っています。
-          </p>
-          <div class="concept-end-line"></div>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">マンション共用部・店舗・施設の定期清掃</p>
+        <h1>定期清掃から、気になる箇所の清掃まで。</h1>
+        <p class="lead">店舗、オフィス、マンション共用部、施設の美観維持を、現場の状態に合わせて支えます。排気口や水回りなど、気になる箇所の重点清掃もご相談ください。</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">清掃内容を相談する</a>
+          <a class="button secondary" href="#works">実績写真を見る</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Wave Divider -->
-  <div class="wave-divider wave-divider-top">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px;">
-      <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" fill="#ffffff"/>
-    </svg>
-  </div>
-
-  <!-- ========================================
-       Service Section
-       ======================================== -->
-  <section class="service" id="service">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">Service</p>
-        <h2 class="section-title">サービス案内</h2>
-        <div class="section-title-bar"></div>
-      </div>
-
-      <!-- ハウスクリーニング: 左画像 / 右テキスト -->
-      <div class="service-block">
-        <div class="service-img reveal-left">
-          <img src="images/house-cleaning.png" alt="ハウスクリーニング キッチン清掃 東京" loading="lazy">
-        </div>
-        <div class="service-card reveal-right">
-          <div class="service-card-header-row">
-            <div class="service-card-icon">
-              <i class="fas fa-home"></i>
-            </div>
-            <h3>ハウスクリーニング</h3>
-          </div>
-          <p>退去後や入居前のお掃除から、お家のエアコンやバスルーム、キッチンなどお家の中のお掃除です。確かな技術でお家をピカピカにいたします。一か所からでもご相談くださいませ。</p>
-          <a href="house-cleaning.html" class="service-detail-btn">詳細はこちら</a>
+      <div class="hero-visual" aria-label="定期清掃のイメージ">
+        <img src="This,IS`'株_files/regular-cleaning-hero.png" alt="施設共用部を清掃するスタッフ">
+        <div class="hero-metrics">
+          <div class="metric"><strong>定期清掃</strong><span>店舗・共用部・施設を継続管理</span></div>
+          <div class="metric"><strong>スポット</strong><span>排気口・水回りなど重点清掃</span></div>
+          <div class="metric"><strong>現地確認</strong><span>汚れ方に合わせて内容を提案</span></div>
         </div>
       </div>
+    </section>
 
-      <!-- 定期清掃: 左テキスト / 右画像（交互配置） -->
-      <div class="service-block reverse">
-        <div class="service-img reveal-right">
-          <img src="images/regular-cleaning.png" alt="オフィス定期清掃 フロアクリーニング 東京" loading="lazy">
+    <section id="regular">
+      <div class="section-head">
+        <p class="eyebrow">REGULAR CLEANING</p>
+        <h2>定期的な美観維持から、気になる箇所の集中清掃まで。</h2>
+        <p>共用部や店舗を継続して整える清掃と、排気口・水回りなど一箇所から相談できる重点清掃。現場に合わせて、無理のない内容をご提案します。</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>日常・巡回清掃</h3>
+          <p>マンション共用部、店舗、施設などを、週1回・月2回・月1回などの頻度で継続的に整えます。</p>
+        </article>
+        <article class="card">
+          <h3>初回リセット清掃</h3>
+          <p>黒ずみやくすみが気になる場所を一度しっかり整え、定期清掃を始めやすい状態にします。</p>
+        </article>
+        <article class="card">
+          <h3>重点スポット清掃</h3>
+          <p>排気口、換気扇、水回り、床洗浄など、気になる箇所だけの清掃にも対応します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reason" class="band">
+      <div class="split">
+        <div class="section-head">
+          <p class="eyebrow">WHY US</p>
+          <h2>小さなご相談から、継続清掃まで対応します。</h2>
+          <p>定期清掃のご相談はもちろん、排気口や水回りなど一部分の清掃から始めることもできます。写真や現地確認で状態を見ながら、必要な作業を整理します。</p>
         </div>
-        <div class="service-card reveal-left">
-          <div class="service-card-header-row">
-            <div class="service-card-icon">
-              <i class="fas fa-building"></i>
-            </div>
-            <h3>定期清掃</h3>
-          </div>
-          <p>マンションやアパートの定期清掃から、オフィス・テナント・店舗などの清掃です。定期的な清掃で常に清潔な空間を維持します。お気軽にご相談くださいませ。</p>
-          <a href="regular-cleaning.html" class="service-detail-btn">詳細はこちら</a>
+        <div class="table">
+          <div class="table-row"><strong>現地確認</strong><span>清掃範囲、汚れ方、利用時間を見て、無理のない頻度と作業内容を設計します。</span></div>
+          <div class="table-row"><strong>品質管理</strong><span>作業チェック、写真報告、気づきの共有により、契約後の不安を減らします。</span></div>
+          <div class="table-row"><strong>柔軟対応</strong><span>定期清掃に加えて、排気口、床洗浄、ワックス、空室清掃などのスポット作業も相談できます。</span></div>
+          <div class="table-row"><strong>スタッフ体制</strong><span>現場ごとの作業内容を共有し、清掃品質がぶれにくい体制づくりを大切にしています。</span></div>
         </div>
       </div>
+    </section>
 
-      <!-- Onepoint Cleaning -->
-      <div class="pricing-section reveal">
-        <p class="pricing-subtitle">ワンポイント清掃</p>
-        <p class="pricing-desc">必要な箇所だけピンポイントで対応いたします。</p>
-        <table class="onepoint-table">
-          <thead>
-            <tr>
-              <th>Menu</th>
-              <th>Price</th>
-              <th>Note</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="menu-name">壁掛けエアコン</td>
-              <td class="menu-price">¥15,000</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td class="menu-name">壁掛けエアコン（ロボ付）</td>
-              <td class="menu-price">¥25,000</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td class="menu-name">空室クリーニング</td>
-              <td class="menu-price">要見積もり</td>
-              <td>
-                <div class="menu-note">目安: 1R 24,000円〜</div>
-              </td>
-            </tr>
-            <tr>
-              <td class="menu-name">リミット清掃</td>
-              <td class="menu-price">1H ¥7,000〜</td>
-              <td>
-                <div class="menu-note">以降1Hごとに4,000円<br>週に1回全体的に1時間だけなど、また家財の移動やちょっとしたお手伝いも引き受けます。</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="pricing-section-footer">
-          <a href="#reservation" class="pricing-section-btn">予約はこちら</a>
-        </div>
+    <section id="service">
+      <div class="section-head">
+        <p class="eyebrow">SERVICE</p>
+        <h2>定期清掃とスポット清掃、どちらもご相談ください。</h2>
+        <p>継続的に整える清掃を中心に、排気口・水回り・退去前後などのスポット清掃にも対応します。清掃前後の写真で、仕上がりの違いもご確認いただけます。</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Wave Divider -->
-  <div class="wave-divider wave-divider-bottom">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px;">
-      <path d="M0,60 C200,0 400,120 600,60 C800,0 1000,120 1200,60 L1200,0 L0,0 Z" fill="#ffffff"/>
-    </svg>
-  </div>
-
-  <!-- ========================================
-       Parallax Quote
-       ======================================== -->
-  <div class="parallax-section">
-    <div class="parallax-bg"></div>
-    <div class="parallax-content">
-      <p class="parallax-quote">
-        清掃によって<span>清爽</span>とした気持ちへ。<br>
-        あなたの空間を、<span>もっと美しく</span>。
-      </p>
-    </div>
-  </div>
-
-  <!-- ========================================
-       About Section
-       ======================================== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="reveal">
-        <p class="section-label">About Us</p>
-        <h2 class="section-title">会社情報</h2>
-        <div class="section-title-bar"></div>
+      <div class="grid">
+        <article class="card">
+          <h3>定期清掃</h3>
+          <ul class="service-list">
+            <li>店舗・オフィス・マンション共用部の継続清掃</li>
+            <li>月次、週次、曜日固定、時間帯調整に対応</li>
+            <li>報告や改善提案まで含めた運用</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>スポット清掃</h3>
+          <ul class="service-list">
+            <li>排気口、床洗浄、ワックス、退去前後の清掃</li>
+            <li>キッチン、浴室、トイレなどの重点清掃</li>
+            <li>定期契約前のお試し清掃にも対応</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>相談から開始まで</h3>
+          <ul class="service-list">
+            <li>お問い合わせ</li>
+            <li>現地確認とヒアリング</li>
+            <li>清掃プランと見積もり提示</li>
+          </ul>
+        </article>
       </div>
+    </section>
 
-      <div class="about-grid">
-        <div class="reveal-left">
-          <table class="company-table">
-            <tr>
-              <th>社名</th>
-              <td>ThisIs株式会社</td>
-            </tr>
-            <tr>
-              <th>本店</th>
-              <td>〒150-0042<br>東京都渋谷区宇田川町12-3<br>ニュー渋谷コーポラス1011号室</td>
-            </tr>
-            <tr>
-              <th>代表者</th>
-              <td>代表取締役 塩川和弥</td>
-            </tr>
-            <tr>
-              <th>設立</th>
-              <td>2022年2月</td>
-            </tr>
-            <tr>
-              <th>資本金</th>
-              <td>100万円</td>
-            </tr>
-            <tr>
-              <th>電話番号</th>
-              <td><a href="tel:03-5932-4206" style="color: var(--navy); border-bottom: 1px solid var(--gold);">03-5932-4206</a></td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>オフィス・テナント清掃<br>ハウスクリーニング</td>
-            </tr>
-            <tr>
-              <th>営業時間</th>
-              <td>9:00 - 22:00（年中無休）</td>
-            </tr>
-          </table>
-        </div>
-        <div class="map-container reveal-right">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6275!2d139.6946!3d35.6612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca84b5b1b7f%3A0x4d1f55b2e4e3b8a0!2z5riL6LC35Yy65a6H55Sw5bed55S6MTItMw!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="ThisIs株式会社 所在地">
-          </iframe>
-        </div>
+    <section id="works" class="band">
+      <div class="section-head">
+        <p class="eyebrow">BEFORE / AFTER</p>
+        <h2>実績写真を、目的別に見られます。</h2>
+        <p>共用部や施設の定期清掃と、水回り・排気口などのスポット清掃を分けて掲載しています。気になる内容に近い実績をご覧ください。</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Wave Divider -->
-  <div class="wave-divider wave-divider-top">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px;">
-      <path d="M0,40 C300,100 600,0 900,80 C1050,110 1150,30 1200,60 L1200,120 L0,120 Z" fill="#f8f6f3"/>
-    </svg>
-  </div>
-
-  <!-- ========================================
-       Contact Section
-       ======================================== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
-          <p class="section-label">Contact</p>
-          <h2 class="section-title">お問い合わせ</h2>
-          <div class="section-title-bar" style="margin-left: auto; margin-right: auto;"></div>
-        </div>
-
-        <form id="contactForm" class="reveal" action="send-contact.php" method="POST">
-          <div class="form-group">
-            <label class="form-label">お名前<span class="required">必須</span></label>
-            <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
+      <div class="works-grid">
+        <article class="work-card">
+          <h3>定期清掃・施設清掃の実績</h3>
+          <p>マンション共用部、ベランダ・踊り場、施設や事務室の床清掃など、継続管理に近い実績をまとめています。</p>
+          <div class="photo-pair" aria-label="施設事務室の床清掃前後">
+            <figure class="photo-panel">
+              <span class="photo-label">BEFORE</span>
+              <img src="This,IS`'株_files/office-floor-before.jpg" alt="施設事務室の床清掃前">
+            </figure>
+            <figure class="photo-panel">
+              <span class="photo-label after">AFTER</span>
+              <img src="This,IS`'株_files/office-floor-after.jpg" alt="施設事務室の床清掃後">
+            </figure>
           </div>
-          <div class="form-group">
-            <label class="form-label">メールアドレス<span class="required">必須</span></label>
-            <input type="email" name="email" class="form-input" placeholder="example@email.com" required>
+          <a class="button" href="regular-cleaning-works.html">定期清掃の実績を見る</a>
+        </article>
+        <article class="work-card">
+          <h3>ハウスクリーニング寄りの実績</h3>
+          <p>お風呂鏡、排気口フィルター、浴室換気扇ファンなど、気になる場所を重点的にきれいにした実績をまとめています。</p>
+          <div class="photo-pair portrait" aria-label="排気口フィルターの清掃前後">
+            <figure class="photo-panel">
+              <span class="photo-label">BEFORE</span>
+              <img src="This,IS`'株_files/vent-filter-before.jpg" alt="排気口フィルターの清掃前">
+            </figure>
+            <figure class="photo-panel">
+              <span class="photo-label after">AFTER</span>
+              <img src="This,IS`'株_files/vent-filter-after.jpg" alt="排気口フィルターの清掃後">
+            </figure>
           </div>
-          <div class="form-group">
-            <label class="form-label">電話番号<span class="required">必須</span></label>
-            <input type="tel" name="phone" class="form-input" placeholder="090-1234-5678" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">お問い合わせ内容<span class="required">必須</span></label>
-            <textarea name="message" class="form-textarea" placeholder="お問い合わせ内容をご記入ください" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit"><span>送信する — Send</span></button>
-        </form>
+          <a class="button" href="house-cleaning-works.html">スポット清掃の実績を見る</a>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Wave Divider -->
-  <div class="wave-divider wave-divider-bottom">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px;">
-      <path d="M0,80 C200,20 500,100 700,40 C900,-10 1100,60 1200,30 L1200,0 L0,0 Z" fill="#f8f6f3"/>
-    </svg>
-  </div>
-
-  <!-- ========================================
-       Reservation Section
-       ======================================== -->
-  <section class="reservation" id="reservation">
-    <div class="container">
-      <div class="reservation-inner">
-        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
-          <p class="section-label">Reservation</p>
-          <h2 class="section-title">ご予約</h2>
-          <div class="section-title-bar" style="margin-left: auto; margin-right: auto;"></div>
-        </div>
-
-        <form id="reservationForm" class="reveal" action="send-reserve.php" method="POST">
-          <div class="form-group">
-            <label class="form-label">お名前<span class="required">必須</span></label>
-            <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">メールアドレス<span class="required">必須</span></label>
-            <input type="email" name="email" class="form-input" placeholder="example@email.com" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">電話番号<span class="required">必須</span></label>
-            <input type="tel" name="phone" class="form-input" placeholder="090-1234-5678" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">メニュー選択<span class="required">必須</span></label>
-            <select name="menu" class="form-select" required>
-              <option value="" disabled selected>メニューをお選びください</option>
-              <option value="deluxe">デラックスパック — ¥55,000</option>
-              <option value="select3">水回り3セレクトパック — ¥38,000</option>
-              <option value="aircon">壁掛けエアコン清掃 — ¥15,000</option>
-              <option value="aircon-robo">壁掛けエアコン清掃（ロボ付） — ¥25,000</option>
-              <option value="limit">リミット清掃 — 1H ¥7,000〜</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">ご希望日</label>
-            <input type="text" name="date" class="form-input" placeholder="例: 2024年1月15日">
-          </div>
-          <div class="form-group">
-            <label class="form-label">ご希望時間</label>
-            <input type="text" name="time" class="form-input" placeholder="例: 午前中 / 14:00頃">
-          </div>
-          <div class="form-group">
-            <label class="form-label">備考</label>
-            <textarea name="message" class="form-textarea" placeholder="ご要望やご質問がございましたらご記入ください" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn-reserve"><span>予約する — Reserve</span></button>
-        </form>
+    <section class="recruit-strip">
+      <div>
+        <p class="eyebrow">RECRUIT</p>
+        <h2>清掃品質を支えるスタッフを募集しています。</h2>
+        <p>未経験、短時間勤務、扶養内勤務など、希望の働き方を相談しながら始められます。</p>
       </div>
-    </div>
-  </section>
+      <a class="button secondary" href="recruit.html">採用情報を見る</a>
+    </section>
 
-  <!-- ========================================
-       Footer
-       ======================================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-info">
-          <div class="footer-logo"><img src="images/会社ロゴ.png" alt="ThisIs株式会社 ロゴ"></div>
-          <p>
-            〒150-0042<br>
-            東京都渋谷区宇田川町12-3<br>
-            ニュー渋谷コーポラス1011号室
-          </p>
-          <p class="footer-tel"><a href="tel:0359324206">03-5932-4206</a></p>
-          <p><a href="mailto:info@thisis.co.jp">info@thisis.co.jp</a></p>
-          <p style="margin-top: 8px;">営業時間: 9:00 - 22:00（年中無休）</p>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-        <div>
-          <p class="footer-heading">Navigation</p>
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#concept">Concept</a>
-            <a href="#service">Service</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-            <a href="#reservation">Reserve</a>
-          </div>
-        </div>
-        <div>
-          <p class="footer-heading">Contact Us</p>
-          <div class="footer-links">
-            <a href="tel:03-5932-4206"><i class="fas fa-phone" style="margin-right: 6px; font-size: 0.7rem;"></i>03-5932-4206</a>
-            <a href="mailto:info@thisis.co.jp"><i class="fas fa-envelope" style="margin-right: 6px; font-size: 0.7rem;"></i>info@thisis.co.jp</a>
-          </div>
-          <div class="footer-cta">
-            <a href="#contact">お問い合わせ</a>
-          </div>
-        </div>
+    <section id="contact" class="cta-band">
+      <div>
+        <h2>まずは現地確認から。</h2>
+        <p>写真での事前相談も可能です。清掃範囲、汚れの状態、頻度、予算感を伺い、必要な清掃をご提案します。</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 ThisIs株式会社 All Rights Reserved.</p>
-      </div>
-    </div>
+      <a class="button secondary" href="mailto:info@example.com?subject=清掃の相談">メールで相談する</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>This,IS株式会社</strong><br>
+    定期清掃・スポット清掃・排気口清掃・水回り清掃
   </footer>
-
-  <!-- Toast -->
-  <div class="toast" id="toast"></div>
-
-  <!-- ========================================
-       JavaScript
-       ======================================== -->
-  <script>
-    // ========================================
-    // Particles
-    // ========================================
-    (function createParticles() {
-      const container = document.getElementById('particles');
-      for (let i = 0; i < 30; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.width = particle.style.height = (Math.random() * 3 + 1) + 'px';
-        particle.style.animationDuration = (Math.random() * 12 + 8) + 's';
-        particle.style.animationDelay = (Math.random() * 10) + 's';
-        container.appendChild(particle);
-      }
-    })();
-
-    // ========================================
-    // Navigation scroll effect
-    // ========================================
-    const nav = document.getElementById('nav');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function() {
-      const scrollY = window.scrollY;
-      if (scrollY > 80) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-      lastScroll = scrollY;
-    });
-
-    // ========================================
-    // Hamburger menu
-    // ========================================
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    hamburger.addEventListener('click', function() {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('open');
-      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // ========================================
-    // Scroll reveal (Intersection Observer)
-    // ========================================
-    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-
-    const revealObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealElements.forEach(function(el) {
-      revealObserver.observe(el);
-    });
-
-    // ========================================
-    // Parallax effect
-    // ========================================
-    const parallaxSections = document.querySelectorAll('[data-parallax]');
-
-    window.addEventListener('scroll', function() {
-      parallaxSections.forEach(function(section) {
-        const rect = section.getBoundingClientRect();
-        const speed = 0.3;
-        const bg = section.querySelector('.parallax-bg');
-        if (bg && rect.top < window.innerHeight && rect.bottom > 0) {
-          const yPos = (rect.top - window.innerHeight) * speed;
-          bg.style.transform = 'translateY(' + yPos + 'px)';
-        }
-      });
-    });
-
-    // ========================================
-    // Smooth scroll for nav links
-    // ========================================
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          const offset = 60;
-          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top: top, behavior: 'smooth' });
-        }
-      });
-    });
-
-    // ========================================
-    // Toast notification
-    // ========================================
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      toast.textContent = message;
-      toast.classList.add('show');
-      setTimeout(function() {
-        toast.classList.remove('show');
-      }, 3000);
-    }
-
-    // ========================================
-    // Form submission status (after PHP redirect)
-    // ========================================
-    window.addEventListener('DOMContentLoaded', function() {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('status') === 'success') {
-        if (window.location.hash === '#contact') {
-          showToast('お問い合わせを送信しました。ありがとうございます。');
-        } else if (window.location.hash === '#reserve' || window.location.hash === '#reservation') {
-          showToast('ご予約を受け付けました。確認のご連絡をいたします。');
-        }
-        history.replaceState(null, '', window.location.pathname + window.location.hash);
-      } else if (params.get('status') === 'error') {
-        showToast('入力内容に不備があります。必須項目をご確認ください。');
-        history.replaceState(null, '', window.location.pathname + window.location.hash);
-      }
-    });
-
-    // ========================================
-    // Active nav link highlight
-    // ========================================
-    const sections = document.querySelectorAll('section[id]');
-
-    window.addEventListener('scroll', function() {
-      const scrollPos = window.scrollY + 100;
-
-      sections.forEach(function(section) {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        const id = section.getAttribute('id');
-
-        if (scrollPos >= top && scrollPos < top + height) {
-          document.querySelectorAll('.nav-links a').forEach(function(a) {
-            a.style.color = '';
-          });
-          const active = document.querySelector('.nav-links a[href="#' + id + '"]');
-          if (active) {
-            active.style.color = '#c8a96e';
-          }
-        }
-      });
-    });
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "ThisIs株式会社",
-    "description": "東京都内全域対応のハウスクリーニング・オフィス定期清掃サービス",
-    "url": "https://thisis.co.jp/",
-    "telephone": "03-5932-4206",
-    "email": "info@thisis.co.jp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "宇田川町12-3 ニュー渋谷コーポラス1011号室",
-      "addressLocality": "渋谷区",
-      "addressRegion": "東京都",
-      "postalCode": "150-0042",
-      "addressCountry": "JP"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 35.6611,
-      "longitude": 139.6989
-    },
-    "areaServed": {
-      "@type": "State",
-      "name": "東京都"
-    },
-    "openingHours": "Mo-Su 09:00-22:00",
-    "founder": {
-      "@type": "Person",
-      "name": "塩川和弥"
-    },
-    "foundingDate": "2022-02",
-    "priceRange": "¥7,000〜",
-    "image": "https://thisis.co.jp/images/会社ロゴ.png",
-    "sameAs": []
-  }
-  </script>
 </body>
 </html>
