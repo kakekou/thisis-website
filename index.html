@@ -471,16 +471,13 @@
       .brand { font-size: 17px; }
       .nav {
         display: grid;
-        grid-template-columns: repeat(4, max-content);
-        gap: 10px 14px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
         width: 100%;
         overflow: visible;
         font-size: 13px;
         white-space: normal;
-      }
-      .nav .button {
-        grid-column: 1 / -1;
-        width: 100%;
+        text-align: center;
       }
       section { padding: 36px 18px; }
       .hero { padding: 30px 18px 36px; gap: 22px; }
@@ -518,7 +515,6 @@
       <a href="#regular">清掃内容</a>
       <a href="#reason">選ばれる理由</a>
       <a href="recruit.html">採用情報</a>
-      <a class="button" href="#contact">清掃を相談する</a>
     </nav>
   </header>
 
