@@ -166,6 +166,11 @@
       line-height: 1.13;
       letter-spacing: 0;
     }
+    .title-fit {
+      display: inline-block;
+      font-size: 0.82em;
+      white-space: nowrap;
+    }
     .lead {
       max-width: 720px;
       margin: 22px 0 0;
@@ -464,10 +469,23 @@
     @media (max-width: 520px) {
       .site-header { padding: 12px 18px; }
       .brand { font-size: 17px; }
-      .nav { gap: 14px; font-size: 13px; }
+      .nav {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        gap: 10px 14px;
+        width: 100%;
+        overflow: visible;
+        font-size: 13px;
+        white-space: normal;
+      }
+      .nav .button {
+        grid-column: 1 / -1;
+        width: 100%;
+      }
       section { padding: 36px 18px; }
       .hero { padding: 30px 18px 36px; gap: 22px; }
-      h1 { font-size: 31px; line-height: 1.18; }
+      h1 { font-size: clamp(30px, 8vw, 34px); line-height: 1.18; }
+      .title-fit { font-size: 1em; }
       h2 { font-size: 24px; }
       .lead { margin-top: 16px; font-size: 15px; }
       .actions { display: grid; grid-template-columns: 1fr; }
@@ -508,8 +526,8 @@
     <section class="hero">
       <div>
         <p class="eyebrow">東京都内・一都三県の定期清掃</p>
-        <h1>定期清掃も、<br>気になる箇所の<br>清掃も。</h1>
-        <p class="lead">東京都内を中心に、店舗、オフィス、マンション共用部、施設の美観維持を支えます。水回りや排気口などのハウスクリーニング・重点清掃もご相談ください。</p>
+        <h1>定期清掃も、<br><span class="title-fit">ハウスクリーニングも。</span></h1>
+        <p class="lead">東京都内を中心に、店舗・オフィス・マンション共用部・施設の美観維持を支えます。水回りや排気口など、住まいの気になる清掃もご相談ください。</p>
       </div>
       <div class="hero-visual" aria-label="定期清掃のイメージ">
         <img src="This,IS`'株_files/special-cleaning-hero.png" alt="オフィス床を磨く清掃スタッフ">
