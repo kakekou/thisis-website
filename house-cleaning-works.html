@@ -238,6 +238,31 @@
       width: 34px;
       height: 34px;
     }
+    .footer-contact {
+      display: block;
+      margin-top: 6px;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      margin-top: 12px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
     @media (max-width: 860px) {
       .header { align-items: flex-start; flex-direction: column; gap: 10px; }
       .nav { width: 100%; overflow-x: auto; padding-bottom: 3px; }
@@ -375,7 +400,8 @@
   <footer>
     <strong class="footer-brand"><img class="brand-mark" src="This,IS`'株_files/company-logo-mark.png" alt="">This,IS株式会社</strong><br>
     <a href="index.html">トップページへ戻る</a><br>
-    <a href="tel:0359324206">03-5932-4206</a> / <a href="mailto:info@thisis.co.jp">info@thisis.co.jp</a> / <a href="https://www.instagram.com/thisis_clean/" target="_blank" rel="noopener">@thisis_clean</a>
+    <span class="footer-contact"><a href="tel:0359324206">03-5932-4206</a> / <a href="mailto:info@thisis.co.jp">info@thisis.co.jp</a></span>
+    <a class="social-link" href="https://www.instagram.com/thisis_clean/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1.2"></circle></svg>Instagram @thisis_clean</a>
   </footer>
 </body>
 </html>
