@@ -99,7 +99,13 @@
       font-size: 14px;
       font-weight: 900;
     }
-    h1, h2, h3, p { overflow-wrap: anywhere; }
+    h1, h2, h3, p {
+      line-break: strict;
+      overflow-wrap: break-word;
+      text-wrap: pretty;
+      word-break: normal;
+    }
+    h1, h2, h3 { text-wrap: balance; }
     h1 {
       margin: 0;
       font-size: 56px;
@@ -423,8 +429,8 @@
     <section class="hero">
       <div>
         <p class="eyebrow">マンション共用部・店舗・施設の定期清掃</p>
-        <h1>定期清掃から、気になる箇所の清掃まで。</h1>
-        <p class="lead">店舗、オフィス、マンション共用部、施設の美観維持を、現場の状態に合わせて支えます。排気口や水回りなど、気になる箇所の重点清掃もご相談ください。</p>
+        <h1>定期清掃も、気になる箇所の清掃も。</h1>
+        <p class="lead">店舗、オフィス、マンション共用部、施設の美観維持を、現場の状態に合わせて支えます。排気口や水回りなどの重点清掃もご相談ください。</p>
       </div>
       <div class="hero-visual" aria-label="定期清掃のイメージ">
         <img src="This,IS`'株_files/special-cleaning-hero.png" alt="オフィス床を磨く清掃スタッフ">
@@ -439,7 +445,7 @@
     <section id="works" class="band">
       <div class="section-head">
         <p class="eyebrow">BEFORE / AFTER</p>
-        <h2>まずは、清掃後の変化をご確認ください。</h2>
+        <h2>清掃後の変化を写真で確認。</h2>
         <p>定期清掃で整える場所と、気になる箇所だけを重点的に清掃する内容を分けて掲載しています。近い実績から仕上がりを確認できます。</p>
       </div>
       <div class="works-grid">
@@ -479,7 +485,7 @@
     <section id="regular">
       <div class="section-head">
         <p class="eyebrow">REGULAR CLEANING</p>
-        <h2>定期的な美観維持から、気になる箇所の集中清掃まで。</h2>
+        <h2>日常のきれいも、気になる汚れも。</h2>
         <p>共用部や店舗を継続して整える清掃と、排気口・水回りなど一箇所から相談できる重点清掃。現場に合わせて、無理のない内容をご提案します。</p>
       </div>
       <div class="grid">
@@ -501,7 +507,7 @@
     <section id="service">
       <div class="section-head">
         <p class="eyebrow">SERVICE</p>
-        <h2>定期清掃とスポット清掃、どちらもご相談ください。</h2>
+        <h2>対応できる清掃内容</h2>
         <p>継続的に整える清掃を中心に、排気口・水回り・退去前後などのスポット清掃にも対応します。清掃前後の写真で、仕上がりの違いもご確認いただけます。</p>
       </div>
       <div class="grid">
@@ -536,7 +542,7 @@
       <div class="split">
         <div class="section-head">
           <p class="eyebrow">WHY US</p>
-          <h2>小さなご相談から、継続清掃まで対応します。</h2>
+          <h2>小さな相談から、継続清掃まで。</h2>
           <p>定期清掃のご相談はもちろん、排気口や水回りなど一部分の清掃から始めることもできます。写真や現地確認で状態を見ながら、必要な作業を整理します。</p>
         </div>
         <div class="table">

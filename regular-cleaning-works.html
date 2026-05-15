@@ -83,7 +83,13 @@
       font-size: 14px;
       font-weight: 900;
     }
-    h1, h2, h3, p { overflow-wrap: anywhere; }
+    h1, h2, h3, p {
+      line-break: strict;
+      overflow-wrap: break-word;
+      text-wrap: pretty;
+      word-break: normal;
+    }
+    h1, h2, h3 { text-wrap: balance; }
     h1 {
       max-width: 920px;
       margin: 0;
@@ -271,7 +277,7 @@
   <main>
     <section class="hero">
       <p class="eyebrow">REGULAR CLEANING WORKS</p>
-      <h1>共用部・施設を、継続して気持ちよく保つ清掃実績。</h1>
+      <h1>共用部・施設をきれいに保つ清掃実績。</h1>
       <p class="lead">マンション共用部や施設の床など、利用者の目に入りやすい場所の清掃前後を写真でご紹介します。定期清掃のご相談時に、仕上がりの目安としてご覧ください。</p>
       <div class="actions">
         <a class="button" href="mailto:info@example.com?subject=定期清掃の相談">定期清掃を相談する</a>
